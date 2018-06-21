@@ -4,8 +4,8 @@ $LAB
 .script("https://code.jquery.com/jquery.min.js")
 
 //Banner輪播
-.script("script/lib/swiper.min.js").wait(function(){
-    var swiper=new Swiper(".swiper-container",{spaceBetween:30,centeredSlides:!0,autoplay:{delay:3500,disableOnInteraction:!1},pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});
+.script("script/lib/jquery.flexslider-min.js").wait(function(){
+    $(window).load(function(){$(".flexslider").flexslider({animation:"slide"})});
   })
 
 //圖片延遲載入

@@ -36,13 +36,13 @@
 * 0. Reset重置
 * 1. 通用設定
 * 2. 全站結構
-* 3. 選單設定
-* 4. 按鈕設定
-* 5. 頁面設定
-*       5.1 首頁
+* 3. 頁面設定
+*       3.1 首頁
 * 
 * 
 * 
+* 4. 選單設定
+* 5. 按鈕設定
 * 9. animate
 *10. overlay-menu
 *11. 自訂scrollbar
@@ -52,7 +52,7 @@
 
 /*
 =====================================
-reset重置
+Reset重置
 =====================================
 */
 @import url("reset.css");
@@ -105,6 +105,25 @@ body > #wrap {height: auto; min-height: 100%;}
 =====================================
 */
 #wrap{ display: block;  width: 100%}
+#atindex{
+    display: block;
+    width: 100%;
+    background: url(../images/bg_header.png) repeat-x}
+#box_top,
+#box_banner,
+#nav_main{
+    display: block;
+    width: 1280px;
+    margin: 0 auto}
+#box_top{
+    position: relative;
+    height: 140px}
+#nav_main{ 
+    background: rgb(229, 230, 230);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;}
+
 
 footer{
 	display:block;
@@ -116,9 +135,100 @@ footer{
 
 /*
 =====================================
+頁面設定
+=====================================
+*/
+/*首頁*/
+#box_top h3 a,
+#box_topright{
+    display: block;
+    position: absolute}
+#box_top h3 a{
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 546px;
+    height: 177px;
+    background: url(../images/logo-site.png) no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden}
+#box_topright{
+    top: 38px;
+    right: 10px;
+    width: 345px}
+#box_topright h4{
+    font-size: 1.8em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #601986;
+    padding-bottom: 20px}
+#box_topright p{
+    display: inline;
+    font-size: 1.6em;
+    padding-right: 8px}
+#box_search{
+    display: inline-block;
+    background: #ececec;
+    border: 1px solid #dcddde;
+    padding: 8px 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px}
+#ppsearch{
+    display: inline-block;
+    border: none;
+    background: transparent;
+    font-family: 'xingothic-tc','Microsoft JhengHei','PingFangTC-Regular',sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    vertical-align: middle}
+#btn_sent{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    border: none;
+    background: url(../images/btn-search.png) no-repeat;
+    /*background-size: contain;*/
+    vertical-align: middle}
+#btn_sent:hover{ 
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    border: none;
+    background: url(../images/btn-search-hover.png) no-repeat;
+    /*background-size: contain;*/
+    vertical-align: middle;
+    cursor: pointer}
+#box_banner{
+    height: 414px;
+    overflow: hidden;
+    margin-bottom: 4px}
+
+
+/*
+=====================================
 選單設定
 =====================================
 */
+#nav_main li a:link,
+#nav_main li a:visited{
+    display: block;
+    float: left;
+    width: 256px;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 3em;
+    text-align: center;
+    color: rgb(59, 16, 82);
+    text-decoration: none;
+    transition: .5s}
+#nav_main li a:hover{
+    color: #fff;
+    background: #662f56;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px}
 
 
 /*
@@ -177,12 +287,6 @@ footer{
     50%  { margin-top: 100px }
     100% { margin-top: 84px }
 }
-
-/*
-=====================================
-首頁設定
-=====================================
-*/
 
 
 /*
