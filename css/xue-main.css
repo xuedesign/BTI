@@ -23,14 +23,12 @@
           
                  xuedesign studio 
              https://www.xuedesign.tw/
---*/
-
-/**
+*
 *
 * @project    Bioevolve Technology Inc.
 * @Author     Elmo Woo <hello@xuedesign.tw>
 * @copyright  2018 xuedesign studio
-* @version    v1.0 - 201806
+* @version    v1.0 - 201806-201807
 *
 *=====================================
 * 0. Reset重置
@@ -38,6 +36,7 @@
 * 2. 全站結構
 * 3. 頁面設定
 *       3.1 首頁
+*       3.2 頁尾
 * 
 * 
 * 
@@ -105,13 +104,19 @@ body > #wrap {height: auto; min-height: 100%;}
 =====================================
 */
 #wrap{ display: block;  width: 100%}
+#atindex,
+footer,
+footer .copyright{
+    display:block;
+	width:100%;
+    min-width: 1240px}
 #atindex{
-    display: block;
-    width: 100%;
     background: url(../images/bg_header.png) repeat-x}
 #box_top,
 #box_banner,
-#nav_main{
+#nav_main,
+#my-container,
+#foot-main{
     display: block;
     width: 1280px;
     margin: 0 auto}
@@ -122,16 +127,20 @@ body > #wrap {height: auto; min-height: 100%;}
     background: rgb(229, 230, 230);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px;}
-
+    border-radius: 5px}
+#my-container{ min-height: 500px}
+#foot-main{ padding: 20px}
 
 footer{
-	display:block;
-	width:100%;
-    min-width: 1240px;
 	height: 270px;
 	background: #edebeb;
 	margin-top:-270px}
+footer .copyright{
+    background: #dcdada;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 3em;
+    color: #4a494a}
 
 /*
 =====================================
@@ -202,8 +211,47 @@ footer{
     cursor: pointer}
 #box_banner{
     height: 414px;
+    background: #c4c4c4;
     overflow: hidden;
     margin-bottom: 4px}
+
+/*頁尾*/
+#foot-main h3,
+.foot-item{ display: inline-block}
+#foot-main h3{
+    background: url(../images/logo-down.png) no-repeat; 
+    width: 190px;
+    height: 167px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden}
+.foot-item{ 
+    vertical-align: top;
+    margin-left: 95px}
+.foot-item h4{
+    font-weight: 500;
+    font-size: 1.8em;
+    line-height: 2.5em;
+    color: #601986}
+.foot-item li{
+    font-size: 1.5em;
+    line-height: 2em}
+.foot-item a:link,
+.foot-item a:visited{
+    text-decoration: none;
+    color: #171717}
+.foot-item a:hover{
+    text-decoration: underline;
+    color: #601986}
+/*#fitem-01{ margin-right: 80px}
+#fitem-02{ margin-right: 80px}*/
+#fitem-03 li{ display: inline-block; margin-right: 8px}
+#fitem-03 a{ 
+    vertical-align: top; 
+    font-size: 2.5em;
+    opacity: .6}
+#fitem-03 a:hover{ opacity: 1; transition: .5s}
+
 
 
 /*

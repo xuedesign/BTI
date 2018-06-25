@@ -1,10 +1,34 @@
 @charset "utf-8";
-/**
+/*-- Created By
+   ##############               ###############   
+    ##############             ###############    
+    ##############             ##############     
+     ##############           ##############      
+      ##############          #############       
+       #############         ##############       
+        #############       ##############        
+        ##############      #############         
+         ###############################          
+         ###############################          
+        #################################         
+        ##############     ##############         
+       ##############       ##############        
+       ##############        ##############       
+      ##############         #######           
+     ###############          ##############      
+     ##############           ###############     
+    ######      
+    ##############              ##############    
+   ##############               ##############
+          
+                 xuedesign studio 
+             https://www.xuedesign.tw/
 *
-* @project    xuedesign studio
+*
+* @project    Bioevolve Technology Inc.
 * @Author     Elmo Woo <hello@xuedesign.tw>
 * @copyright  2018 xuedesign studio
-* @version    v1.0 - 201804
+* @version    v1.0 - 201806-201807
 *
 **/
 
@@ -13,7 +37,19 @@
 平板裝置(寬>長)  for-tablet-landscape-up
 =====================================
 */
-@media (max-width:1110px) { 
+@media (max-width:1110px) { /*1000*/
+#atindex,
+footer,
+footer .copyright{ min-width: 1000px}
+#box_top,
+#box_banner,
+#nav_main,
+#my-container,
+#foot-main{ width: 1000px}
+#nav_main li a:link,
+#nav_main li a:visited{ width: 200px}
+#box_banner{ height: 323px}
+.foot-item{ margin-left: 95px}
     
 }
 
@@ -22,8 +58,30 @@
 平板裝置(長>寬) for-tablet-portrait-up
 =====================================
 */
-@media (max-width:800px) {
-    
+@media (max-width:800px) { /*750*/
+#atindex,
+footer,
+footer .copyright{ min-width: 750px}
+#box_top,
+#box_banner,
+#nav_main,
+#my-container,
+#foot-main{ width: 750px}
+#nav_main li a:link,
+#nav_main li a:visited{ width: 150px}
+#box_banner{ height: 242px}
+#foot-main h3{ display: none}
+.foot-item{ margin-left: 45px}
+
+#box_top h3 a{
+    width: 400px;
+    height: 130px;
+    background-size: contain} 
+#box_topright{
+    right: 5px;
+    width: 345px;
+    text-align: right}    
+#box_topright h4{ font-size: 1.6em}    
 }
 
 /*
@@ -31,7 +89,28 @@
 平板裝置(7"~8"小平板) for-SnmallTablet
 =====================================
 */
-@media (max-width: 600px) {
+@media (max-width: 600px) { /*573*/
+#atindex,
+footer,
+footer .copyright{ min-width: 573px}
+#box_top,
+#box_banner,
+#nav_main,
+#my-container,
+#foot-main{ width: 573px}
+#nav_main li a:link,
+#nav_main li a:visited{ width: 114px}
+#box_banner{ height: 184px}
+footer{ height: 320px}
+.foot-item{ margin-left: 10px; margin-right: 20px}
+.foot-item:nth-child(2){ width: 40%}
+
+#box_top h3 a{ 
+    width: 170px;
+    height: 130px;
+    background-size: 400px 130px;
+    overflow: hidden}
+#box_topright{ right: 10px}
     
 }
 
@@ -40,7 +119,29 @@
 手機(5"以上大螢幕) for-phone-only
 =====================================
 */
-@media (max-width: 420px) {
+@media (max-width: 420px) { /*373*/
+#atindex,
+footer,
+footer .copyright{ min-width: 373px}
+#box_top,
+#box_banner,
+#nav_main,
+#my-container,
+#foot-main{ width: 373px}
+#nav_main li a:link,
+#nav_main li a:visited{ width: 114px}
+#box_banner{ height: 121px}
+footer{ height: 320px}
+.foot-item{ margin-left: 10px; margin-right: 20px}
+.foot-item:nth-child(2){ width: 40%}
+
+#box_top h3 a{ 
+    width: 170px;
+    height: 130px;
+    background-size: 400px 130px;
+    overflow: hidden}
+#box_topright{ right: 10px}    
+    
     
 }
 
@@ -49,7 +150,7 @@
 手機(4.7"以下小螢幕) for-phone-only
 =====================================
 */
-@media (max-width: 321px) {
+@media (max-width: 321px) { /*300*/
     
 }
 
