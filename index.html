@@ -20,6 +20,7 @@
 <title>明華生技有限公司，專營牙科醫療器材與光學護目鏡販售</title>
 <link rel="stylesheet" href="css/xue-main.css"/>
 <link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/xue-expansion.css">
 <link rel="stylesheet" href="css/xue-mobile.css">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-oi8o31xSQq8S0RpBcb4FaLB8LJi9AT8oIdmS1QldR8Ui7KUQjNAnDlJjp55Ba8FG" crossorigin="anonymous">
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -42,6 +43,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <header id="atindex">
             <div id="box_top">
                 <h3><a href="index.html" title="回首頁">明華生技有限公司 Bioevolve Technology Inc.</a></h3>
+                <button id="trigger-overlay" type="button"><i class="far fa-bars"></i></button>
                 <div id="box_topright">
                     <h4>最受專業醫護信賴的醫療器材服務品牌</h4>
                     <p>搜尋站內產品</p>
@@ -52,7 +54,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
             <div id="box_banner">
-                <div class="flexslider">
+                <div class="flexslider">    
                     <ul class="slides">
                         <li><img src="images/pic_banner-index-01.jpg" alt="*"/></li>
                         <li><img src="images/pic_banner-index-01.jpg" alt="*"/></li>
@@ -107,7 +109,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </ul>
         </div>
     </div>        
-</footer> 
+</footer>
+
+<!--mobile menu-->
+<div class="overlay overlay-scale">
+    <button type="button" class="overlay-close"><i class="fas fa-times-square"></i></button>
+    <nav>
+        <ul>
+            <li><a class="hvr-underline-from-left" href="about.html">關於明華</a></li>
+            <li><a class="hvr-underline-from-left" href="news-list.html">最新消息</a></li>
+            <li><a class="hvr-underline-from-left" href="spcialty-classify.html">專業人士</a></li>
+            <li><a class="hvr-underline-from-left" href="healthcare-classify.html">一般民眾</a></li>
+            <li><a class="hvr-underline-from-left" href="contact.html">聯絡我們</a></li>
+        </ul>
+    </nav>
+</div> 
 
 
 <script src="https://cdn.rawgit.com/getify/LABjs/122980ba/LAB.min.js"></script>

@@ -19,8 +19,9 @@ $LAB
   })
 
 //行動版選單
-
-
+.script("script/lib/overlay.modernizr.custom.js")
+.script("script/lib/overlay-classie.js")
+.script("script/lib/overlay-set.js")
 
 // 另開視窗
 function externalLinks() { 

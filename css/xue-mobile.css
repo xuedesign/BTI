@@ -128,21 +128,53 @@ footer .copyright{ min-width: 373px}
 #nav_main,
 #my-container,
 #foot-main{ width: 373px}
-#nav_main li a:link,
-#nav_main li a:visited{ width: 114px}
 #box_banner{ height: 121px}
-footer{ height: 320px}
-.foot-item{ margin-left: 10px; margin-right: 20px}
-.foot-item:nth-child(2){ width: 40%}
 
+#atindex{ background: none}
+#box_top{ height: 150px}
 #box_top h3 a{ 
-    width: 170px;
-    height: 130px;
-    background-size: 400px 130px;
+    width: 250px;
+    height: 81px;
+    background-size: contain;
     overflow: hidden}
-#box_topright{ right: 10px}    
-    
-    
+#box_topright{
+    width: 100%;
+    margin: 0 auto;
+    top: 91px;
+    right: 30px}
+#box_topright h4{ display: none}
+#nav_main{ display: none}
+footer{ height: auto; padding-bottom: 10px}
+.foot-item{
+    display: block;
+    width: 95%;
+    margin: 0 auto 15px auto}
+.foot-item:nth-child(2){ width: 95%}
+.foot-item:nth-child(3),
+.foot-item:nth-child(4){ 
+    display: inline-block;
+    width: 49%}
+.foot-item:nth-child(4){ padding-left: 35px}
+
+#trigger-overlay{ 
+    display: block;
+    position: absolute;
+    top:18px;
+    right: 10px;
+    width: 46px;
+    height: 46px;
+    font-size: 2em;
+    color: #fff;
+    background: rgba(96, 25, 134, .7);
+    border: none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px}
+#trigger-overlay:hover{
+    background: rgba(96, 25, 134, 1);
+    color: #fff;
+    transition: .5s}
 }
 
 /*
@@ -151,6 +183,36 @@ footer{ height: 320px}
 =====================================
 */
 @media (max-width: 321px) { /*300*/
+#atindex,
+footer,
+footer .copyright{ min-width: 300px}
+#box_top,
+#box_banner,
+#nav_main,
+#my-container,
+#foot-main{ width: 300px}
+#box_banner{ height: 97px}
+footer .copyright{ font-size: 1.3em}
+.foot-item{ width: 100%}
+.foot-item:nth-child(2){ width: 100%}
+.foot-item:nth-child(3){ 
+    display: inline-block;
+    width: 52%}
+.foot-item:nth-child(4){ 
+    display: inline-block;
+    width: 40%;
+    padding-left: 18px}
+#box_top h3 a{
+    top: 5px;
+    width: 200px;
+    height: 65px;
+    background-size: contain;
+    overflow: hidden}
+#box_topright{
+    top: 85px;
+    right: 0}
+#box_topright p{ display: none}
+#ppsearch{ width:  240px}
     
 }
 
