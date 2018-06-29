@@ -49,6 +49,6 @@ del {text-decoration: line-through}
 table {	border-collapse: collapse; border-spacing: 0}
 
 /*固定box尺寸，不會受padding和邊框粗細影響*/
-*{-webkit-box-sizing: border-box;
+/**{-webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
-          box-sizing: border-box}
+          box-sizing: border-box}*/

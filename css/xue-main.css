@@ -128,8 +128,35 @@ footer .copyright{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px}
-#my-container{ min-height: 500px}
+#my-container{ 
+    min-height: 500px;
+    clear: both}
 #foot-main{ padding: 20px}
+
+#body-full,
+#body-content,
+#body-aside,
+#body-indexleft,
+#body-indexright{ 
+    display: block; 
+    margin-top: 55px; 
+    margin-bottom: 55px}
+#body-full{
+    width: 96%;
+    margin-left: 20px;
+    margin-right: 20px}
+#body-content{}
+#body-aside{}
+#body-indexleft{
+    width: 780px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 40px}
+#body-indexright{
+    width: 400px;
+    margin-right: 20px}
+.box-left{ float: left}
+.box-right{ float: right}
 
 footer{
 	height: 270px;
@@ -213,7 +240,59 @@ footer .copyright{
     height: 414px;
     background: #c4c4c4;
     overflow: hidden;
-    margin-bottom: 4px}
+    margin-bottom: 4px;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -o-border-radius: 5px; 
+    border-radius: 5px}
+#my-container h1{ display: none}
+#my-container h2{
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: 30px;
+    color: #601986;
+    background: url(../images/icon_ppot.png) no-repeat;
+    padding: 0 0 15px 53px}
+#my-container .index-news{ 
+    display: block;
+    float: left; 
+    width: 250px}
+.index-news-list{
+    display: table;
+    width: 725px;
+    margin: 0 40px 50px 55px}
+.index-news-list td{ 
+    padding: 15px 10px;
+    border-bottom: 1px dashed #cbc9c9;
+    overflow: hidden}
+.news-data{ width: 15%; text-align: center}
+.news-data span{
+    font-size: 1.3em;
+    font-weight: 300;
+    color: #454445;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    border: 1px solid #95eadc;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -o-border-radius: 5px; 
+    border-radius: 5px}
+.news-title a:link{
+    font-size: 1.6em;
+    color: #454445;
+    text-decoration: none}
+.news-title a:visited{
+    color: #838183;
+    text-decoration: none}
+.news-title a:hover{
+    color: #f40;
+    text-decoration: none}
+
+.index-newest-products{
+    display: block;
+    width: 725px;
+    margin: 0 40px 20px 55px}
+
 
 /*頁尾*/
 #foot-main h3,
@@ -253,7 +332,6 @@ footer .copyright{
 #fitem-03 a:hover{ opacity: 1; transition: .5s}
 
 
-
 /*
 =====================================
 選單設定
@@ -270,6 +348,7 @@ footer .copyright{
     text-align: center;
     color: rgb(59, 16, 82);
     text-decoration: none;
+    list-style: none;
     transition: .5s}
 #nav_main li a:hover{
     color: #fff;
@@ -286,17 +365,18 @@ footer .copyright{
 */
 .mybtn-xl,
 .mybtn-l,
-.mybtn-m{
+.mybtn-m,
+.mybtn-s{
     display: block;
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 2.2rem;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 2.4px;
     letter-spacing: 1px;
     text-align: center;
     border: 2px solid;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     margin: 0 auto;
     text-decoration: none}
 .mybtn-xl{ 
@@ -308,6 +388,9 @@ footer .copyright{
 .mybtn-m{ 
     width: 120px;
     padding: 8px 10px}
+.mybtn-s{
+    width: 90px;
+    padding: 5px 10px}
 .btn-white{
     color: #fff;
     border-color: #fff;
@@ -324,6 +407,14 @@ footer .copyright{
     /* 變動類別;動畫時間;動畫加速屬性;延遲發生時間 */
     -moz-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;}
+.btn_more{ 
+    float: right;
+    line-height: .8em;
+    border-color: #95eadc;
+    color: #a599ac}
+.btn_more:hover{ 
+    background: #fddac7;
+    color: #191919}
 
 @keyframes mousemove {
     0%   { margin-top: 85px }
