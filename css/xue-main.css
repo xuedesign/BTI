@@ -42,9 +42,8 @@
 * 
 * 4. 選單設定
 * 5. 按鈕設定
-* 9. animate
-*10. overlay-menu
-*11. 自訂scrollbar
+* 6. 載入動畫
+* 7. 自訂scrollbar
 *=====================================
 **/
 
@@ -248,7 +247,8 @@ footer .copyright{
 #my-container h1{ display: none}
 #my-container h2{
     font-size: 2.5em;
-    font-weight: 400;
+    font-weight: 500;
+    font-weight: bold \9;
     line-height: 30px;
     color: #601986;
     background: url(../images/icon_ppot.png) no-repeat;
@@ -268,11 +268,11 @@ footer .copyright{
 .news-data{ width: 15%; text-align: center}
 .news-data span{
     font-size: 1.3em;
-    font-weight: 300;
+    font-weight: 500;
     color: #454445;
     letter-spacing: 1px;
     padding: 3px 10px;
-    border: 1px solid #95eadc;
+    border: 2px solid #95eadc;
     -webkit-border-radius: 5px; 
     -moz-border-radius: 5px; 
     -o-border-radius: 5px; 
@@ -292,6 +292,91 @@ footer .copyright{
     display: block;
     width: 725px;
     margin: 0 40px 20px 55px}
+.inproduce-item{
+    display: block;
+    float: left;
+    width: 236px;
+    text-align: center;
+    margin-right: 8px;
+    margin-bottom: 30px}
+.inproduce-item:nth-child(3),
+.inproduce-item:nth-child(6){margin-right: 0}
+.inproduce-item:first-child+li+li,
+.inproduce-item:first-child+li+li+li+li+li{margin-right: 0}
+.inproduce-item span{
+    display: block;
+    width: 236px;
+    height: 163px;
+    overflow: hidden;
+    margin-bottom: 8px}
+.inproduce-item img{
+    border: 1px solid #e4e3e4;
+    height: 161px;
+    width: auto;
+    margin: 0 auto}
+.inproduce-item p{
+    display: block;
+    max-width: 236px;
+    max-height: 28px;
+    overflow: hidden;
+    font-size: 1.6em;
+    line-height: 2em;
+    /*text-align: center*/}
+.inproduce-item a:link,
+.inproduce-item a:visited{
+    color: #454445;
+    text-decoration: none}
+.inproduce-item a:hover{
+    color: #f40;
+    text-decoration: none}
+
+.pplist-index{
+    display: block;
+    width: 340px;
+    margin: 0 0 30px 60px;
+    /*background: #f3f3f3;*/
+    -webkit-border-radius: 8px; 
+    -moz-border-radius: 8px; 
+    -o-border-radius: 8px; 
+    border-radius: 8px}
+.pplist-index h3{
+    display: block;
+    font-weight: 500;
+    font-weight: bold \9;
+    font-size: 2em;
+    line-height: 2.5em;
+    color: #46625d;
+    letter-spacing: 1px;
+    background: #95eadc;
+    padding-left: 22px;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0}
+.pplist-index ul{
+    display: block;
+    padding: 20px 25px 30px}
+.pplist-index li a:link,
+.pplist-index li a:visited{
+    font-size: 1.6em;
+    line-height: 2.5em;
+    color: #454445;
+    text-decoration: none}
+.pplist-index li a:hover{
+    color: #f40;
+    text-decoration: none}
+.fa-codepen{
+    font-size: 1.8em;
+    padding-right: 15px;
+    color: #84cbbf}
+.bg-01{
+    background: #f3f3f3 url(../images/bg_ppitem-01.png) no-repeat;
+    background-position: 180px 180px}
+.bg-02{
+    background: #f3f3f3 url(../images/bg_ppitem-02.png) no-repeat;
+    background-position: 210px 120px}
+.fb-page{ margin-left: 60px ; display: none \9}
+.box-fb{ display: none \9}
+
 
 
 /*頁尾*/
@@ -425,6 +510,109 @@ footer .copyright{
     0%   { margin-top: 85px }
     50%  { margin-top: 100px }
     100% { margin-top: 84px }
+}
+
+/*
+=====================================
+載入動畫
+=====================================
+*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 150px, 0);
+    transform: translate3d(0, 150px, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)}
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 150px, 0);
+    transform: translate3d(0, 150px, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)}
+}
+.fadeInUp,
+.fadeInUp-01{
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 900ms;
+  -moz-animation-duration: 900ms;
+  animation-duration: 900ms}
+.fadeInUp-01{
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(150px, 0, 0);
+    transform: translate3d(150px, 0, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)}
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(150px, 0, 0);
+    transform: translate3d(150px, 0, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)}
+}
+
+
+.fadeInRight,
+.fadeInRight-01{
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-duration: 900ms;
+    -moz-animation-duration: 900ms;
+    animation-duration: 900ms}
+.fadeInLeft-01{
+    -webkit-animation-delay: 500ms;
+    animation-delay: 500ms} 
+
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-150px, 0, 0);
+    transform: translate3d(-150px, 0, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)}
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-delay: 900ms;
+    animation-delay: 900ms;
+    -webkit-animation-duration: 1200ms;
+    -moz-animation-duration: 1200ms;
+    animation-duration: 1200ms
 }
 
 
