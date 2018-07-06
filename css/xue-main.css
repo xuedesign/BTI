@@ -37,7 +37,7 @@
 * 3. 頁面設定
 *       3.1 首頁
 *       3.2 頁尾
-* 
+*       3.3 商品介紹 
 * 
 * 
 * 4. 選單設定
@@ -77,8 +77,8 @@ image{border:0}
 .hidden{ display:none}
 
 /*頁面反白設定*/
-::selection { background: #126db4; color: #fff}
-::-moz-selection { background: #126db4; color: #fff}
+::selection { background: #601986; color: #fff}
+::-moz-selection { background: #601986; color: #fff}
 img::selection { background: transparent}
 img::-moz-selection { background: transparent}
 
@@ -104,6 +104,7 @@ body > #wrap {height: auto; min-height: 100%;}
 */
 #wrap{ display: block;  width: 100%}
 #atindex,
+#atpage,
 footer,
 footer .copyright{
     display:block;
@@ -111,8 +112,11 @@ footer .copyright{
     min-width: 1240px}
 #atindex{
     background: url(../images/bg_header.png) repeat-x}
+#atpage{
+    background: url(../images/bg_header-page.png) repeat-x}
 #box_top,
 #box_banner,
+#box_banner-page,
 #nav_main,
 #my-container,
 #foot-main{
@@ -130,22 +134,55 @@ footer .copyright{
 #my-container{ 
     min-height: 500px;
     clear: both}
+#container-top{ 
+    display: block;
+    width: 97%;
+    padding: 50px 1.5% 0}
+#container-top h2{ 
+    display: block;
+    float: left}
+#bar-cookie{ 
+    display: block;
+    float: right; 
+    text-align: right}
+#bar-cookie a:link{
+    font-size: 1.6em;
+    line-height: 36px;
+    color: #454445;
+    text-decoration: none}
+#bar-cookie a:visited{
+    color: #838183;
+    text-decoration: none}
+#bar-cookie a:hover{
+    color: #f40;
+    text-decoration: none}
+#bar-cookie i{
+    font-size: 1.6em;
+    color: #601986;
+    padding-right: 8px}
 #foot-main{ padding: 20px}
 
 #body-full,
-#body-content,
-#body-aside,
 #body-indexleft,
-#body-indexright{ 
-    display: block; 
-    margin-top: 55px; 
-    margin-bottom: 55px}
+#body-indexright,
+#body-content,
+#body-aside{ display: block; margin-bottom: 55px }
+#body-full,
+#body-indexleft,
+#body-indexright{ margin-top: 55px}
+#body-content{ margin-top: 30px}
+#body-aside{ margin-top: 18px}
 #body-full{
     width: 96%;
     margin-left: 20px;
     margin-right: 20px}
-#body-content{}
-#body-aside{}
+#body-content{
+    width: 920px;
+    margin-left: 20px;
+    margin-right: 20px}
+#body-aside{
+    width: 300px;
+    margin-left: 20px}
 #body-indexleft{
     width: 780px;
     margin-left: 20px;
@@ -174,11 +211,11 @@ footer .copyright{
 =====================================
 */
 /*首頁*/
-#box_top h3 a,
+#box_top h1 a,
 #box_topright{
     display: block;
     position: absolute}
-#box_top h3 a{
+#box_top h1 a{
     top: 0;
     left: 0;
     z-index: 99;
@@ -235,16 +272,29 @@ footer .copyright{
     /*background-size: contain;*/
     vertical-align: middle;
     cursor: pointer}
-#box_banner{
-    height: 414px;
-    background: #c4c4c4;
+#box_banner,
+#box_banner-page{
     overflow: hidden;
     margin-bottom: 4px;
     -webkit-border-radius: 5px; 
     -moz-border-radius: 5px; 
     -o-border-radius: 5px; 
     border-radius: 5px}
-#my-container h1{ display: none}
+#box_banner{ height: 414px}
+#box_banner-page{ height: 259px}
+#box_banner-page h2{
+    display: block;
+    float: left;
+    width: 290px;
+    font-size: 5em;
+    font-weight: 500;
+    font-weight: bold \9;
+    letter-spacing: 1px;
+    padding: 50px 0 0 30px}
+#box_banner-page img{
+    display: block;
+    float: right}
+
 #my-container h2{
     font-size: 2.5em;
     font-weight: 500;
@@ -300,9 +350,11 @@ footer .copyright{
     margin-right: 8px;
     margin-bottom: 30px}
 .inproduce-item:nth-child(3),
-.inproduce-item:nth-child(6){margin-right: 0}
+.inproduce-item:nth-child(6),
+.inproduce-item:nth-child(9){margin-right: 0}
 .inproduce-item:first-child+li+li,
-.inproduce-item:first-child+li+li+li+li+li{margin-right: 0}
+.inproduce-item:first-child+li+li+li+li+li,
+.inproduce-item:first-child+li+li+li+li+li+li+li+li{margin-right: 0}
 .inproduce-item span{
     display: block;
     width: 236px;
@@ -352,16 +404,20 @@ footer .copyright{
     -webkit-border-radius: 8px 8px 0 0;
     -moz-border-radius: 8px 8px 0 0;
     border-radius: 8px 8px 0 0}
-.pplist-index ul{
+.pplist-index ul,
+#sub-menu ul{
     display: block;
     padding: 20px 25px 30px}
 .pplist-index li a:link,
-.pplist-index li a:visited{
+.pplist-index li a:visited,
+#sub-menu li a:link,
+#sub-menu li a:visited{
     font-size: 1.6em;
     line-height: 2.5em;
     color: #454445;
     text-decoration: none}
-.pplist-index li a:hover{
+.pplist-index li a:hover,
+#sub-menu li a:hover{
     color: #f40;
     text-decoration: none}
 .fa-codepen{
@@ -375,9 +431,24 @@ footer .copyright{
     background: #f3f3f3 url(../images/bg_ppitem-02.png) no-repeat;
     background-position: 210px 120px}
 .fb-page{ margin-left: 60px ; display: none \9}
-.box-fb{ display: none \9}
-
-
+.box_fbinfo{
+    display: none;
+    display: block \9;
+    width: 340px;
+    margin-left: 60px}
+.box_fbinfo p{
+    margin-top: 8px;
+    font-size: 1.6em;
+    line-height: 2em}
+.box_fbinfo a:link {
+    text-decoration:underline; 
+    color:#00adee}
+.box_fbinfo a:visited {
+    text-decoration:underline; 
+    color:#8c8c8c}
+.box_fbinfo a:hover {
+    text-decoration:none; 
+    color:#F40}
 
 /*頁尾*/
 #foot-main h3,
@@ -415,6 +486,155 @@ footer .copyright{
     font-size: 2.5em;
     opacity: .6}
 #fitem-03 a:hover{ opacity: 1; transition: .5s}
+
+/*商品介紹*/
+.banner-color-00{ background:#c4c4c4}
+.banner-color-01{}
+.banner-color-02{}
+.banner-color-03{ color:#fff; background:#7ec1b6}
+.banner-color-04{}
+.banner-color-05{}
+.banner-color-06{}
+.banner-color-07{}
+.banner-color-08{}
+#sub-menu{
+    display: block;
+    width: 270px;
+    background: #f3f3f3;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px}
+#sub-menu h4{
+    display: block;
+    font-size: 2em;
+    line-height: 2.3em;
+    letter-spacing: 1px;
+    color: #46625d;
+    background-color: #95eadc;
+    padding-left: 25px}
+#sub-menu h4:first-child{
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0}
+#product-name{
+    font-size: 2.5em;
+    line-height: 1.5em;
+    color: #601986}
+#product-info{
+    display: block;
+    width: 100%;
+    margin: 10px 0 30px;
+    border-top: 2px solid #dcddde;
+    border-bottom: 2px solid #dcddde}
+#product-info li{
+    display: inline-block;
+    width: 31%;
+    font-size: 1.5em;
+    line-height: 2.3em;
+    padding-left: 2%}
+#page-main{
+    display: block;
+    width: 96%;
+    padding: 0 2% 30px}
+#page-main p{
+    font-size: 1.6em;
+    line-height: 2em}
+#page-main img{
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 15px auto}
+#page-main ul,
+#page-main ol{
+    display: block;
+    width: 95%;
+    margin: 15px auto}
+#page-main ul li,
+#page-main ol li{ 
+    font-size: 1.6em;
+    line-height: 2em;
+    padding: 5px 0;
+    border-bottom: 1px dashed #bebaba}
+#page-main ul li{ list-style-type: disc}
+#page-main ol li{ list-style-type: decimal}
+#page-main a:link{
+    color: #09967f;
+    text-decoration: underline}
+#page-main a:visited{
+    color: #4a5856;
+    text-decoration: underline}
+#page-main a:hover{
+    color: #f40;
+    text-decoration: none}
+#how-to-buy{}
+#how-to-buy h3{
+    font-size: 2.2em;
+    line-height: 2em;
+    color: #601986;
+    border-bottom: 2px solid #dcddde}
+#how-to-buy p{
+    font-size: 1.6em;
+    line-height: 1.8em;
+    padding: 10px 0 20px}
+#contact-list li a:link,
+#contact-list li a:visited{
+    display: block;
+    float: left;
+    width: 100px;
+    margin-right: 15px;
+    padding: 2px 12px;
+    font-size: 1.6em;
+    line-height: 2em;
+    text-align: center;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: #3ec7b1;    
+    color: #fff;
+    text-decoration: none}
+#contact-list li a:hover{
+    background: #2daf9a;    
+    color: #fff;
+    text-decoration: none}
+#contact-list .btn_back{
+    float: right}
+#contact-list .btn_back a:link,
+#contact-list .btn_back a:visited{
+    background: white;
+    color: #409082;
+    border: 2px solid #84cbbf}
+#contact-list .btn_back a:hover{
+    background: #2daf9a;    
+    color: #fff;
+    text-decoration: none}
+
+#products-list{
+    display: block;
+    width: 100%;
+    padding: 0 0 30px}
+#products-list li{
+    display: inline-block;
+    width: 31%;
+    margin: 0 1% 40px;
+    overflow: hidden;
+    text-align: center;
+    /*border-bottom: 1px solid #e1e1e1*/}
+#products-list img{
+    display: block;
+    height: 196px;
+    width: auto;
+    margin: 0 auto;
+    border: 1px solid #e4e3e4}
+#products-list a>h5{
+    display: block;
+    width: 100%;
+    height: 2em;
+    overflow: hidden;
+    font-size: 1.8em;
+    line-height: 2em;
+    color: #601986}
+#products-list a:hover>h5{ color: #f40}
+#products-list a:link{ text-decoration: none}
 
 
 /*
@@ -612,8 +832,7 @@ footer .copyright{
     animation-delay: 900ms;
     -webkit-animation-duration: 1200ms;
     -moz-animation-duration: 1200ms;
-    animation-duration: 1200ms
-}
+    animation-duration: 1200ms}
 
 
 /*
