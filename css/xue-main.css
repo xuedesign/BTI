@@ -166,7 +166,7 @@ footer .copyright{
 #body-indexleft,
 #body-indexright,
 #body-content,
-#body-aside{ display: block; margin-bottom: 55px }
+#body-aside{ display: block; margin-bottom: 0/*50px*/ }
 #body-full,
 #body-indexleft,
 #body-indexright{ margin-top: 55px}
@@ -362,7 +362,7 @@ footer .copyright{
     overflow: hidden;
     margin-bottom: 8px}
 .inproduce-item img{
-    border: 1px solid #e4e3e4;
+    /*border: 1px solid #e4e3e4;*/
     height: 161px;
     width: auto;
     margin: 0 auto}
@@ -516,11 +516,13 @@ footer .copyright{
     -webkit-border-radius: 8px 8px 0 0;
     -moz-border-radius: 8px 8px 0 0;
     border-radius: 8px 8px 0 0}
-#product-name{
+#product-name,
+#list-name{
     font-size: 2.5em;
     line-height: 1.5em;
     color: #601986}
-#product-info{
+#product-info,
+#list-info{
     display: block;
     width: 100%;
     margin: 10px 0 30px;
@@ -532,6 +534,28 @@ footer .copyright{
     font-size: 1.5em;
     line-height: 2.3em;
     padding-left: 2%}
+#list-info li{
+    display: block;
+    width: 92.5%;
+    font-size: 1.5em;
+    line-height: 2em;
+    margin-right: 54px;
+    padding: 5px 0 5px 60px;
+    text-indent: -48px;}
+#list-info li a:link,
+#list-info li a:visited{
+    color: #171717;
+    text-decoration: none;
+    margin-right: 20px}
+#list-info li a:hover{
+    color: #f40;
+    text-decoration: none}
+#list-info li a.nowin{ 
+    color: #f40; 
+    font-weight: bold}
+#list-info li:first-child{
+    border-bottom: 1px dashed #a0a0a0}
+
 #page-main{
     display: block;
     width: 96%;
@@ -566,7 +590,9 @@ footer .copyright{
 #page-main a:hover{
     color: #f40;
     text-decoration: none}
-#how-to-buy{}
+#how-to-buy{
+    display: block;
+    margin-bottom: 50px}
 #how-to-buy h3{
     font-size: 2.2em;
     line-height: 2em;
@@ -616,24 +642,37 @@ footer .copyright{
     display: inline-block;
     width: 31%;
     margin: 0 1% 40px;
-    overflow: hidden;
     text-align: center;
     /*border-bottom: 1px solid #e1e1e1*/}
-#products-list img{
-    display: block;
-    height: 196px;
-    width: auto;
-    margin: 0 auto;
-    border: 1px solid #e4e3e4}
-#products-list a>h5{
+#products-list span{
     display: block;
     width: 100%;
-    height: 2em;
+    height: 196px;
+    overflow: hidden}
+#products-list img{
+    display: block;
+    height: 194px;
+    width: auto;
+    /*border: 1px solid #e4e3e4;*/
+    margin: 0 auto}
+#products-list a>h5,
+#products-list a>p{
+    display: block;
+    width: 100%;
     overflow: hidden;
+    font-weight: 400;
+    font-weight: normal \9;
+    color: #454445}
+#products-list a>h5{
     font-size: 1.8em;
     line-height: 2em;
-    color: #601986}
-#products-list a:hover>h5{ color: #f40}
+    height: 2em}
+#products-list a>p{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    height: 1.8em}
+#products-list a:hover>h5,
+#products-list a:hover>p{ color: #f40}
 #products-list a:link{ text-decoration: none}
 
 
@@ -718,8 +757,8 @@ footer .copyright{
     border-color: #95eadc;
     color: #a599ac}
 .btn_more:hover{ 
-    background: #fddac7;
-    color: #191919}
+    background: #2daf9a;
+    color: #fff}
 
 @keyframes mousemove {
     0%   { margin-top: 85px }
@@ -809,9 +848,9 @@ footer .copyright{
     -webkit-animation-duration: 900ms;
     -moz-animation-duration: 900ms;
     animation-duration: 900ms}
-.fadeInLeft-01{
+.fadeInRight-01{
     -webkit-animation-delay: 500ms;
-    animation-delay: 500ms} 
+    animation-delay: 500ms}
 
 
 @keyframes fadeInLeft {
@@ -834,6 +873,26 @@ footer .copyright{
     -moz-animation-duration: 1200ms;
     animation-duration: 1200ms}
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0}
+  to {
+    opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0}
+  to {
+    opacity: 1}
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1500ms;
+    -moz-animation-duration: 1500ms;
+    animation-duration: 1500ms}
 
 /*
 =====================================
