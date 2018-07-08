@@ -13,6 +13,12 @@ $LAB
     wow=new WOW({animateClass:"animated",offset:100,callback:function(a){console.log("WOW: animating <"+a.tagName.toLowerCase()+">")}}),wow.init();
   })
 
+//totop
+.script("script/lib/jquery.ui.totop.js")
+.script("script/lib/easing.js").wait(function(){
+    $(document).ready(function(){$().UItoTop({easingType:"easeOutQuart"})}); 
+})
+
 //行動版選單
 .script("script/lib/overlay.modernizr.custom.js")
 .script("script/lib/overlay-classie.js")

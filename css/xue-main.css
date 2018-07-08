@@ -44,6 +44,7 @@
 * 5. 按鈕設定
 * 6. 載入動畫
 * 7. 自訂scrollbar
+* 8. 返回頂端
 *=====================================
 **/
 
@@ -144,10 +145,11 @@ footer .copyright{
 #bar-cookie{ 
     display: block;
     float: right; 
-    text-align: right}
-#bar-cookie a:link{
+    text-align: right;
     font-size: 1.6em;
     line-height: 36px;
+    color: #454445}
+#bar-cookie a:link{
     color: #454445;
     text-decoration: none}
 #bar-cookie a:visited{
@@ -157,7 +159,6 @@ footer .copyright{
     color: #f40;
     text-decoration: none}
 #bar-cookie i{
-    font-size: 1.6em;
     color: #601986;
     padding-right: 8px}
 #foot-main{ padding: 20px}
@@ -489,12 +490,20 @@ footer .copyright{
 
 /*商品介紹*/
 .banner-color-00{ background:#c4c4c4}
-.banner-color-01{}
-.banner-color-02{}
-.banner-color-03{ color:#fff; background:#7ec1b6}
-.banner-color-04{}
-.banner-color-05{}
-.banner-color-06{}
+.banner-color-01,
+.banner-color-02,
+.banner-color-03,
+.banner-color-04,
+.banner-color-05,
+.banner-color-06,
+.banner-color-07,
+.banner-color-08{ color:#fff}
+.banner-color-01{ background:#1abccf}
+.banner-color-02{ background:#e4998f}
+.banner-color-03{ background:#7ec1b6}
+.banner-color-04{ background:#7DA7D1/*#37c7fc*/}
+.banner-color-05{ background:#22569a}
+.banner-color-06{ background:#c5a885}
 .banner-color-07{}
 .banner-color-08{}
 #sub-menu{
@@ -915,3 +924,32 @@ footer .copyright{
   background: #ECECEC;
   border: 0px none #fff;
   border-radius: 0}
+
+/*
+=====================================
+返回頂端
+=====================================
+*/
+#toTop {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	overflow:hidden;
+	width:51px;
+	height:51px;
+	border:none;
+	text-indent:-999px;
+	background:url(../images/ui.totop.png) no-repeat left top}
+#toTopHover {
+	background:url(../images/ui.totop.png) no-repeat left -51px;
+	width:51px;
+	height:51px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0)}
+#toTop:active, #toTop:focus { outline:none}
