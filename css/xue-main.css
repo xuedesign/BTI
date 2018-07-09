@@ -38,8 +38,12 @@
 *       3.1 首頁
 *       3.2 頁尾
 *       3.3 商品介紹 
-* 
-* 
+*       3.4 搜尋結果 
+*       3.5 關於明華
+*       3.6 最新消息
+*       3.7 聯絡我們
+*       3.8 客戶服務
+*       3.9 錯誤訊息
 * 4. 選單設定
 * 5. 按鈕設定
 * 6. 載入動畫
@@ -167,10 +171,12 @@ footer .copyright{
 #body-indexleft,
 #body-indexright,
 #body-content,
-#body-aside{ display: block; margin-bottom: 0/*50px*/ }
-#body-full,
+#body-aside{ 
+    display: block; 
+    margin-bottom: 0/*50px*/ }
 #body-indexleft,
 #body-indexright{ margin-top: 55px}
+#body-full,
 #body-content{ margin-top: 30px}
 #body-aside{ margin-top: 18px}
 #body-full{
@@ -290,6 +296,7 @@ footer .copyright{
     font-size: 5em;
     font-weight: 500;
     font-weight: bold \9;
+    line-height: 1.2em;
     letter-spacing: 1px;
     padding: 50px 0 0 30px}
 #box_banner-page img{
@@ -312,7 +319,8 @@ footer .copyright{
     display: table;
     width: 725px;
     margin: 0 40px 50px 55px}
-.index-news-list td{ 
+.index-news-list td,
+.news-list td{ 
     padding: 15px 10px;
     border-bottom: 1px dashed #cbc9c9;
     overflow: hidden}
@@ -578,18 +586,24 @@ footer .copyright{
     height: auto;
     margin: 15px auto}
 #page-main ul,
-#page-main ol{
+#page-main ol,
+#news-main ul,
+#news-main ol{
     display: block;
     width: 95%;
     margin: 15px auto}
 #page-main ul li,
-#page-main ol li{ 
+#page-main ol li,
+#news-main ul li,
+#news-main ol li{ 
     font-size: 1.6em;
     line-height: 2em;
     padding: 5px 0;
     border-bottom: 1px dashed #bebaba}
-#page-main ul li{ list-style-type: disc}
-#page-main ol li{ list-style-type: decimal}
+#page-main ul li,
+#news-main ul li{ list-style-type: disc}
+#page-main ol li,
+#news-main ol li{ list-style-type: decimal}
 #page-main a:link{
     color: #09967f;
     text-decoration: underline}
@@ -684,6 +698,149 @@ footer .copyright{
 #products-list a:hover>p{ color: #f40}
 #products-list a:link{ text-decoration: none}
 
+/*搜尋結果*/
+#box_search-nothing{
+    display: block;
+    width: 90%;
+    margin: 50px auto;
+    text-align: center}
+#box_search-nothing p{
+    font-size: 2em;
+    line-height: 2.2em;
+    margin: 30px auto}
+
+/*關於明華*/
+#box_about-img{
+    display: block;
+    float: left;
+    width: 41%;
+    margin-bottom: 50px}
+#box_about-txt{
+    display: block;
+    float: right;
+    width: 59%}
+#box_about-img img{
+    display: block;
+    border: none;
+    margin: 0}
+#box_about-txt h3{
+    font-size: 2.2em;
+    line-height: 2em;
+    color: #3ec7b1}
+#box_about-txt p{
+    font-size: 1.6em;
+    line-height: 2.2em;
+    text-align: justify;
+    padding-bottom: 5px}
+
+/*最新消息*/
+.news-list{
+    display: table;
+    width: 98%;
+    margin: 0 auto 30px auto}
+#bar_PageNumber,
+#bar_PageNext,
+#bar_PageTruner{
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    text-align: center}
+#bar_PageTruner{ display: none}
+#bar_PageNumber a:link{
+    font-size: 1.6em;
+    line-height: 2.2em;
+    color: #444545;
+    text-decoration: none;
+    padding: 0 30px;
+    border-right: 1px solid #bfbfbf}
+#bar_PageNext a:link{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.6em;
+    line-height: 2.2em;
+    color: #444545;
+    text-decoration: none;
+    padding: 0 30px;
+    border-right: 1px solid #bfbfbf}
+#bar_PageNumber a:last-child,
+#bar_PageNext a:last-child{
+    border-right: none}
+#bar_PageNumber a:visited,
+#bar_PageNext a:visited{
+    color: #8e8e8e;
+    text-decoration: none}
+#bar_PageNumber a:hover,
+#bar_PageNext a:hover{
+    color: #fff;
+    background: #3ec7b1;
+    text-decoration: none;
+    padding: 0 30px;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px}
+.newspage-title{ width: 75%}
+.post-date{
+    display: block;
+    float: left;
+    font-size: 1.6em;
+    padding-top: 20px}
+.addthis_inline_share_toolbox{
+    float: right;
+    margin-top: -20px}
+#news-main p{
+    font-size: 1.8em;
+    line-height: 1.8em}
+#news-main img{
+    display: block;
+    margin: 15px auto}
+#news-main a:link{
+    color: #3ec7b1;
+    text-decoration: underline}
+#news-main a:visited{
+    color: #838183;
+    text-decoration: underline}
+#news-main a:hover{
+    color: #f40;
+    text-decoration: none}
+
+/*聯絡我們*/
+/*客戶服務*/
+#box_warranty{
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center}
+#box_warranty p{
+    font-size: 1.8em;
+    line-height: 2em}
+#box_warranty ul{
+    margin: 15px 0 0 32%}
+#box_privacy{
+    display: block;
+    margin:0 0 40px 55px}
+#box_privacy h4{
+    font-size: 2em;
+    line-height: 2.5em;
+    color: #3ec7b1}
+#box_privacy h5{
+    font-size: 1.8em;
+    line-height: 1em}
+#box_privacy ol{
+    display: block;
+    padding: 15px 22px 40px}
+#box_privacy li{
+    font-size: 1.6em;
+    line-height: 1.8em;
+    text-align: justify;
+    list-style: decimal}
+/*錯誤訊息*/
+
 
 /*
 =====================================
@@ -744,7 +901,7 @@ footer .copyright{
 .mybtn-s{
     width: 90px;
     padding: 5px 10px}
-.btn-white{
+/*.btn-white{
     color: #fff;
     border-color: #fff;
     text-shadow: 0 0 15px #868686}
@@ -757,17 +914,30 @@ footer .copyright{
     border-color: #0d4d80;
     background: #126db4;
     -webkit-transition: all 0.5s ease 0s;
-    /* 變動類別;動畫時間;動畫加速屬性;延遲發生時間 */
+    /* 變動類別;動畫時間;動畫加速屬性;延遲發生時間 
     -moz-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;}
+    transition: all 0.5s ease 0s;}*/
+.btn_green{
+    color: #fff;
+    background: #3ec7b1}
+.btn_green:hover{
+    color: #fff;
+    background: #2daf9a}
 .btn_more{ 
     float: right;
     line-height: .8em;
     border-color: #95eadc;
     color: #a599ac}
-.btn_more:hover{ 
+.btn_more:hover,
+.btn_backto:hover{ 
     background: #2daf9a;
     color: #fff}
+.btn_backto{
+    float: right;
+    color: #fff;
+    background: #3ec7b1;
+    padding: 15px 10px;
+    margin-bottom: 50px}
 
 @keyframes mousemove {
     0%   { margin-top: 85px }
