@@ -73,7 +73,7 @@ footer .copyright{ min-width: 750px}
 #foot-main h3{ display: none}
 .foot-item{ margin-left: 45px}
 
-#box_top h3 a{
+#box_top h1 a{
     width: 400px;
     height: 130px;
     background-size: contain} 
@@ -105,7 +105,7 @@ footer{ height: 320px}
 .foot-item{ margin-left: 10px; margin-right: 20px}
 .foot-item:nth-child(2){ width: 40%}
 
-#box_top h3 a{ 
+#box_top h1 a{ 
     width: 170px;
     height: 130px;
     background-size: 400px 130px;
@@ -132,7 +132,7 @@ footer .copyright{ min-width: 373px}
 
 #atindex{ background: none}
 #box_top{ height: 150px}
-#box_top h3 a{ 
+#box_top h1 a{ 
     width: 250px;
     height: 81px;
     background-size: contain;
@@ -202,7 +202,7 @@ footer .copyright{ font-size: 1.3em}
     display: inline-block;
     width: 40%;
     padding-left: 18px}
-#box_top h3 a{
+#box_top h1 a{
     top: 5px;
     width: 200px;
     height: 65px;
