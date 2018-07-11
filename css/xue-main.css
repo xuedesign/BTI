@@ -338,6 +338,7 @@ footer .copyright{
     border-radius: 5px}
 .news-title a:link{
     font-size: 1.6em;
+    line-height: 1.4em;
     color: #454445;
     text-decoration: none}
 .news-title a:visited{
@@ -1134,7 +1135,7 @@ footer .copyright{
     transform: translate3d(0, 0, 0)}
 }
 
-.fadeInLeft {
+.fadeInLeft{
     -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
     -webkit-animation-delay: 900ms;
@@ -1142,6 +1143,12 @@ footer .copyright{
     -webkit-animation-duration: 1200ms;
     -moz-animation-duration: 1200ms;
     animation-duration: 1200ms}
+.fadeInLeft-01{
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 900ms;
+    -moz-animation-duration: 900ms;
+    animation-duration: 900ms}
 
 @-webkit-keyframes fadeIn {
   from {

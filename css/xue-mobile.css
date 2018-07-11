@@ -49,7 +49,41 @@ footer .copyright{ min-width: 1000px}
 #nav_main li a:link,
 #nav_main li a:visited{ width: 200px}
 #box_banner{ height: 323px}
+#foot-main{ padding: 0}    
 .foot-item{ margin-left: 75px}
+
+#body-indexleft{ width: 600px}
+#body-indexright{ width: 300px}
+.index-news-list,
+.index-newest-products{ 
+    width: 590px;
+    margin-right: 10px;
+    margin-left: 0/*55px*/}
+.index-news-list { margin-bottom: 50px}
+.index-newest-products{ margin-bottom: 20px}
+.inproduce-item{ 
+    margin-right: 30px;
+    margin-left: 25px}
+.inproduce-item:nth-child(3),
+.inproduce-item:nth-child(6),
+.inproduce-item:nth-child(9){margin-right: 30px}
+.inproduce-item:first-child+li+li,
+.inproduce-item:first-child+li+li+li+li+li,
+.inproduce-item:first-child+li+li+li+li+li+li+li+li{margin-right: 30px}
+.pplist-index{
+    width: 300px;
+    margin: 0 0 30px 0/*60px*/}
+.fb-page{ margin-left: 0}
+.fb-comments, .fb-comments iframe[style] {
+    width: 100% !important}
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+    width: 100% !important}
+.box_fbinfo{
+    width: 300px;
+    margin-left: 0}
+.box_fbinfo img{
+    width: 100%;
+    height: auto}
     
 }
 
