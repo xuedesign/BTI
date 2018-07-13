@@ -250,7 +250,8 @@ footer{ height: auto; padding-bottom: 10px}
 .foot-item:nth-child(4){ 
     display: inline-block;
     width: 49%}
-.foot-item:nth-child(4){ padding-left: 35px}
+.foot-item:nth-child(3){ padding-left: 10px}
+.foot-item:nth-child(4){ padding-left: 20px}
 
 #trigger-overlay{ 
     display: block;
@@ -271,6 +272,19 @@ footer{ height: auto; padding-bottom: 10px}
     background: rgba(96, 25, 134, 1);
     color: #fff;
     transition: .5s}
+    
+.index-news-list,
+.index-newest-products,
+.pplist-index,
+.fb-page{ width: 95%; margin-left: 0}
+.inproduce-item{
+    width: 300px;
+    margin-right: 17px;
+    margin-left: 17px}
+.inproduce-item span{ width: 300px; height: 207px}
+.inproduce-item img{ height: 207px}
+.inproduce-item p{ max-width: 300px}
+.btn_more{ margin-right: 8px}
 }
 
 /*
@@ -308,8 +322,23 @@ footer .copyright{ font-size: 1.3em}
     top: 85px;
     right: 0}
 #box_topright p{ display: none}
-#ppsearch{ width:  240px}
-    
+#ppsearch{ width: 240px}
+#my-container h2{
+    font-size: 2em;
+    padding: 0 0 15px 53px}
+.index-news-list td,
+.news-list td{ padding: 15px 5px}
+.news-data{ width: 10%}
+.news-data span{ font-size: 1em}
+.mybtn-xl,
+.mybtn-l,
+.mybtn-m,
+.mybtn-s{ font-size: 1.3em; line-height: 15px}
+.inproduce-item{ width: 245px}
+.inproduce-item span{ width: 245px; height: 169px}
+.inproduce-item img{ height: 169px}
+.inproduce-item p{ max-width: 245px}
+.foot-item:nth-child(2){ padding-left: 10px}   
 }
 
 
