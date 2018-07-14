@@ -43,7 +43,6 @@
 *       3.6 最新消息
 *       3.7 聯絡我們
 *       3.8 客戶服務
-*       3.9 錯誤訊息
 * 4. 選單設定
 * 5. 按鈕設定
 * 6. 載入動畫
@@ -513,8 +512,8 @@ footer .copyright{
 .banner-color-04{ background:#7DA7D1/*#37c7fc*/}
 .banner-color-05{ background:#22569a}
 .banner-color-06{ background:#c5a885}
-.banner-color-07{}
-.banner-color-08{}
+.banner-color-07,
+.banner-color-08{ background:#e14e55}
 #sub-menu{
     display: block;
     width: 270px;
@@ -903,12 +902,14 @@ footer .copyright{
     transition: all 0.5s ease 0s}
 
 /*客戶服務*/
-#box_warranty{
+#box_warranty,
+#box_error{
     display: block;
     width: 85%;
     margin: 0 auto;
     text-align: center}
-#box_warranty p{
+#box_warranty p,
+#box_error p{
     font-size: 1.8em;
     line-height: 2em}
 #box_warranty ul{
@@ -916,7 +917,8 @@ footer .copyright{
 #box_privacy{
     display: block;
     margin:0 0 40px 55px}
-#box_privacy h4{
+#box_privacy h4,
+#box_error h3{
     font-size: 2em;
     line-height: 2.5em;
     color: #3ec7b1}
@@ -931,7 +933,6 @@ footer .copyright{
     line-height: 1.8em;
     text-align: justify;
     list-style: decimal}
-/*錯誤訊息*/
 
 
 /*
