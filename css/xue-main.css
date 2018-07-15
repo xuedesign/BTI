@@ -298,6 +298,7 @@ footer .copyright{
     line-height: 1.2em;
     letter-spacing: 1px;
     padding: 50px 0 0 30px}
+#box_banner-page span,
 #box_banner-page img{
     display: block;
     float: right}
@@ -933,6 +934,29 @@ footer .copyright{
     line-height: 1.8em;
     text-align: justify;
     list-style: decimal}
+#warranty-list{
+    display: block;
+    margin-top: 20px}
+#warranty-list a:link,
+#warranty-list a:visited{
+    display: inline-block;
+    width: 100px;
+    margin-right: 15px;
+    padding: 2px 12px;
+    font-size: 1.6em;
+    line-height: 2em;
+    text-align: center;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: #3ec7b1;    
+    color: #fff;
+    text-decoration: none}
+#warranty-list a.lineid{ width: 180px}
+#warranty-list a:hover{
+    background: #2daf9a;    
+    color: #fff;
+    text-decoration: none}
 
 
 /*

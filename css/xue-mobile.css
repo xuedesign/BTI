@@ -39,10 +39,12 @@
 */
 @media (max-width:1110px) { /*1000*/
 #atindex,
+#atpage,
 footer,
 footer .copyright{ min-width: 1000px}
 #box_top,
 #box_banner,
+#box_banner-page,
 #nav_main,
 #my-container,
 #foot-main{ width: 1000px}
@@ -84,6 +86,15 @@ footer .copyright{ min-width: 1000px}
 .box_fbinfo img{
     width: 100%;
     height: auto}
+
+#box_banner-page span{
+    width: 680px;
+    height: 259px;
+    overflow: hidden}
+#box_about-txt{ margin-bottom: 50px}    
+#box_about-img img{
+    width: 360px;
+    height: auto}
     
 }
 
@@ -97,10 +108,12 @@ footer .copyright{ min-width: 1000px}
      -moz-box-sizing: border-box;
           box-sizing: border-box}
 #atindex,
+#atpage,
 footer,
 footer .copyright{ min-width: 750px}
 #box_top,
 #box_banner,
+#box_banner-page,
 #nav_main,
 #my-container,
 #foot-main{ width: 750px}
@@ -130,8 +143,7 @@ footer .copyright{ min-width: 750px}
     margin-left: 20px;
     margin-right: 20px;
     padding-right: 20px}
-#my-container .index-news{ 
-    width: 50%}    
+#my-container .index-news{ width: 50%}    
 .index-news-list,
 .index-newest-products,
 .pplist-index{ 
@@ -159,7 +171,12 @@ footer .copyright{ min-width: 750px}
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
     width: 96% !important}
 .fb-page{ margin-left: 45px; margin-bottom: 50px}    
-    
+#box_banner-page h2{ width: 35%; font-size: 4em}
+#box_banner-page span{ width: 65%}   
+#box_about-img img{ width: 90%; height: auto}
+#warranty-list a:link,
+#warranty-list a:visited{ width: 130px}
+#warranty-list a.lineid{ width: 180px}
 }
 
 /*
@@ -169,10 +186,12 @@ footer .copyright{ min-width: 750px}
 */
 @media (max-width: 600px) { /*573*/
 #atindex,
+#atpage,
 footer,
 footer .copyright{ min-width: 573px}
 #box_top,
 #box_banner,
+#box_banner-page,
 #nav_main,
 #my-container,
 #foot-main{ width: 573px}
@@ -190,9 +209,7 @@ footer{ height: 320px}
     overflow: hidden}
 #box_topright{ right: 10px}
 #body-indexleft,
-#body-indexright{
-    width: 92%;
-    padding-right: 0}
+#body-indexright{ width: 92%; padding-right: 0}
  
 .inproduce-item{
     width: 200px;
@@ -207,7 +224,25 @@ footer{ height: 320px}
 .inproduce-item span{ width: 200px; height: 138px}
 .inproduce-item img{ height: 138px}
 .inproduce-item p{ max-width: 200px}
-    
+
+#container-top h2{ 
+    float: none; 
+    width: 90%; 
+    text-align: left}
+#bar-cookie{ display: none}
+#box_banner-page h2{ 
+    width: 35%; 
+    font-size: 3.5em;
+    padding: 50px 30px 0 20px}
+#box_banner-page span{ width: 65%} 
+#box_about-txt{ padding-right: 15px}
+#warranty-list a:link,
+#warranty-list a:visited{
+    display: block;
+    margin: 0 auto 15px auto}
+#box_error h3,
+#box_error p{ line-height: 1.8em}
+
 }
 
 /*
@@ -217,10 +252,12 @@ footer{ height: 320px}
 */
 @media (max-width: 420px) { /*373*/
 #atindex,
+#atpage,
 footer,
 footer .copyright{ min-width: 373px}
 #box_top,
 #box_banner,
+#box_banner-page,
 #nav_main,
 #my-container,
 #foot-main{ width: 373px}
@@ -285,6 +322,39 @@ footer{ height: auto; padding-bottom: 10px}
 .inproduce-item img{ height: 207px}
 .inproduce-item p{ max-width: 300px}
 .btn_more{ margin-right: 8px}
+ 
+#box_banner-page{ 
+    position: relative}
+#box_banner-page h2{
+    position: absolute;
+    top: 208px;
+    left: 20px;
+    z-index: 99;
+    width: 90%;
+    font-size: 3.5em;
+    padding: 0}
+#box_banner-page span{ 
+    width: 100%;
+    height: 200px}
+#container-top h2{ width: 98%}
+#body-full{ margin: -10px auto 0 auto}
+#box_about-img,
+#box_about-txt{
+    float: none;
+    width: 95%;
+    margin: 0 auto}
+#box_about-img{ 
+    display: flex;
+    height: 130px;
+    margin-bottom: 15px}
+#box_about-img img{    
+    width: 48%;
+    height: auto}
+#box_banner-page h2.long-title{ font-size: 3em}
+#box_privacy{ width: 95%; margin: 0 auto 40px auto}
+#box_privacy h4{ 
+    line-height: 1.7em; 
+    margin-bottom: 20px}
 }
 
 /*
@@ -294,10 +364,12 @@ footer{ height: auto; padding-bottom: 10px}
 */
 @media (max-width: 321px) { /*300*/
 #atindex,
+#atpage,
 footer,
 footer .copyright{ min-width: 300px}
 #box_top,
 #box_banner,
+#box_banner-page,
 #nav_main,
 #my-container,
 #foot-main{ width: 300px}
@@ -338,7 +410,17 @@ footer .copyright{ font-size: 1.3em}
 .inproduce-item span{ width: 245px; height: 169px}
 .inproduce-item img{ height: 169px}
 .inproduce-item p{ max-width: 245px}
-.foot-item:nth-child(2){ padding-left: 10px}   
+.foot-item:nth-child(2){ padding-left: 10px}
+
+#box_banner-page h2{ 
+    top:212px;
+    font-size: 2.7em}
+#box_about-img{ 
+    display: flex;
+    width: 90%;
+    height: 100px;
+    margin-bottom: 15px}
+#box_banner-page h2.long-title{ font-size: 2.5em}
 }
 
 
