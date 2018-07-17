@@ -89,7 +89,7 @@ img::-moz-selection { background: transparent}
 /*完美置底*/
 html, body, #wrap {height: 100%;}
 body > #wrap {height: auto; min-height: 100%;}
-#main_content{padding-bottom:270px}
+#main_content{padding-bottom:350px}
 .clearfix:after{content: ".";
     display: block;
     height: 0;
@@ -164,7 +164,8 @@ footer .copyright{
 #bar-cookie i{
     color: #601986;
     padding-right: 8px}
-#foot-main{ padding: 20px}
+#foot-main{ 
+    padding: 35px 20px 20px}
 
 #body-full,
 #body-indexleft,
@@ -201,9 +202,9 @@ footer .copyright{
 .box-right{ float: right}
 
 footer{
-	height: 270px;
+	height: 350px;
 	background: #edebeb;
-	margin-top:-270px}
+	margin-top:-350px}
 footer .copyright{
     background: #dcdada;
     text-align: center;
@@ -222,10 +223,10 @@ footer .copyright{
     display: block;
     position: absolute}
 #box_top h1 a{
-    top: 0;
+    top: 18px;
     left: 0;
     z-index: 99;
-    width: 546px;
+    width: 660px/*546px*/;
     height: 177px;
     background: url(../images/logo-site.png) no-repeat;
     text-indent: 100%;
@@ -234,7 +235,7 @@ footer .copyright{
 #box_topright{
     top: 38px;
     right: 10px;
-    width: 345px}
+    width: 400px/*345px*/}
 #box_topright h4{
     font-size: 1.8em;
     font-weight: 500;
@@ -356,9 +357,11 @@ footer .copyright{
     display: block;
     float: left;
     width: 236px;
+    height: 270px;
+    overflow: hidden;
     text-align: center;
     margin-right: 8px;
-    margin-bottom: 30px}
+    margin-bottom: 15px}
 .inproduce-item:nth-child(3),
 .inproduce-item:nth-child(6),
 .inproduce-item:nth-child(9){margin-right: 0}
@@ -378,11 +381,12 @@ footer .copyright{
     margin: 0 auto}
 .inproduce-item p{
     display: block;
-    max-width: 236px;
-    max-height: 28px;
+    width: 236px;
+    max-height: 60px;
     overflow: hidden;
     font-size: 1.6em;
-    line-height: 2em;
+    line-height: 1.4em;
+    vertical-align:middle
     /*text-align: center*/}
 .inproduce-item a:link,
 .inproduce-item a:visited{
@@ -559,7 +563,7 @@ footer .copyright{
     line-height: 2em;
     margin-right: 54px;
     padding: 5px 0 5px 60px;
-    text-indent: -48px;}
+    text-indent: -48px}
 #list-info li a:link,
 #list-info li a:visited{
     color: #171717;
@@ -630,7 +634,7 @@ footer .copyright{
 #contact-list li a:visited{
     display: block;
     float: left;
-    width: 100px;
+    /*width: 100px;*/
     margin-right: 15px;
     padding: 2px 12px;
     font-size: 1.6em;
@@ -653,6 +657,7 @@ footer .copyright{
 #contact-list .btn_back a:visited{
     background: white;
     color: #409082;
+    padding: 0 12px;
     border: 2px solid #84cbbf}
 #contact-list .btn_back a:hover{
     background: #2daf9a;    
@@ -666,6 +671,8 @@ footer .copyright{
 #products-list li{
     display: inline-block;
     width: 31%;
+    height: 300px;
+    overflow: hidden;
     margin: 0 1% 40px;
     text-align: center;
     /*border-bottom: 1px solid #e1e1e1*/}
@@ -684,14 +691,14 @@ footer .copyright{
 #products-list a>p{
     display: block;
     width: 100%;
-    overflow: hidden;
     font-weight: 400;
     font-weight: normal \9;
     color: #454445}
 #products-list a>h5{
+    display: block;
+    max-height: 3.6em;
     font-size: 1.8em;
-    line-height: 2em;
-    height: 2em}
+    line-height: 1.6em}
 #products-list a>p{
     font-size: 1.5em;
     line-height: 1.5em;
@@ -716,11 +723,12 @@ footer .copyright{
     display: block;
     float: left;
     width: 41%;
-    margin-bottom: 50px}
+    margin-bottom: 30px}
 #box_about-txt{
     display: block;
     float: right;
-    width: 59%}
+    width: 59%;
+    margin-bottom: 50px}
 #box_about-img img{
     display: block;
     border: none;
@@ -856,7 +864,8 @@ footer .copyright{
     display: block;
     float: left;
     width: 535px;
-    padding-left: 60px}
+    padding-left: 60px;
+    margin-bottom: 50px}
 #service-form p{
     font-size: 1.6em;
     line-height: 1.5em;
@@ -940,7 +949,7 @@ footer .copyright{
 #warranty-list a:link,
 #warranty-list a:visited{
     display: inline-block;
-    width: 100px;
+    /*width: 100px;*/
     margin-right: 15px;
     padding: 2px 12px;
     font-size: 1.6em;
@@ -1055,6 +1064,7 @@ footer .copyright{
     background: #3ec7b1;
     padding: 15px 10px;
     margin-bottom: 50px}
+.btn_backlist{ display: none}
 
 @keyframes mousemove {
     0%   { margin-top: 85px }
@@ -1235,7 +1245,7 @@ footer .copyright{
 	border:none;
 	text-indent:-999px;
 	background:url(../images/ui.totop.png) no-repeat left top}
-#toTopHover {
+#toTopHover{
 	background:url(../images/ui.totop.png) no-repeat left -51px;
 	width:51px;
 	height:51px;
