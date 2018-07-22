@@ -89,7 +89,7 @@ img::-moz-selection { background: transparent}
 /*完美置底*/
 html, body, #wrap {height: 100%;}
 body > #wrap {height: auto; min-height: 100%;}
-#main_content{padding-bottom:350px}
+#main_content{padding-bottom: 330px}
 .clearfix:after{content: ".";
     display: block;
     height: 0;
@@ -202,9 +202,9 @@ footer .copyright{
 .box-right{ float: right}
 
 footer{
-	height: 350px;
+	height: 330px;
 	background: #edebeb;
-	margin-top:-350px}
+	margin-top:-330px}
 footer .copyright{
     background: #dcdada;
     text-align: center;
@@ -223,19 +223,21 @@ footer .copyright{
     display: block;
     position: absolute}
 #box_top h1 a{
-    top: 18px;
+    top: 35px;
     left: 0;
     z-index: 99;
-    width: 660px/*546px*/;
-    height: 177px;
-    background: url(../images/logo-site.png) no-repeat;
+    width: 500px/*546px*/;
+    height: 81px/*177px*/;
+    background: url(../images/logo-site-02.png) no-repeat;
+    background-size: contain;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden}
 #box_topright{
     top: 38px;
     right: 10px;
-    width: 400px/*345px*/}
+    width: 450px/*345px*/;
+    text-align: right}
 #box_topright h4{
     font-size: 1.8em;
     font-weight: 500;
@@ -646,7 +648,7 @@ footer .copyright{
     background: #3ec7b1;    
     color: #fff;
     text-decoration: none}
-#contact-list li a.lineid{ width: 180px}
+/*#contact-list li a.lineid{ width: 180px}*/
 #contact-list li a:hover{
     background: #2daf9a;    
     color: #fff;
@@ -664,48 +666,57 @@ footer .copyright{
     color: #fff;
     text-decoration: none}
 
-#products-list{
+#products-list,
+#products-list-sub{
     display: block;
     width: 100%;
     padding: 0 0 30px}
-#products-list li{
+#products-list li,
+#products-list-sub li{
     display: inline-block;
     width: 31%;
-    height: 300px;
     overflow: hidden;
-    margin: 0 1% 40px;
+    margin: 0 1%;
     text-align: center;
     /*border-bottom: 1px solid #e1e1e1*/}
-#products-list span{
+#products-list li{ height: 270px}
+#products-list-sub li{ height: 320px}
+#products-list span,
+#products-list-sub span{
     display: block;
     width: 100%;
     height: 196px;
-    overflow: hidden}
-#products-list img{
+    overflow: hidden;
+    margin-bottom: 10px}
+#products-list img,
+#products-list-sub img{
     display: block;
     height: 194px;
     width: auto;
     /*border: 1px solid #e4e3e4;*/
     margin: 0 auto}
 #products-list a>h5,
-#products-list a>p{
+#products-list-sub a>h5,
+#products-list-sub a>p{
     display: block;
     width: 100%;
     font-weight: 400;
     font-weight: normal \9;
     color: #454445}
-#products-list a>h5{
-    display: block;
+#products-list a>h5,
+#products-list-sub a>h5{
     max-height: 3.6em;
     font-size: 1.8em;
     line-height: 1.6em}
-#products-list a>p{
+#products-list-sub a>p{
     font-size: 1.5em;
     line-height: 1.5em;
     height: 1.8em}
 #products-list a:hover>h5,
-#products-list a:hover>p{ color: #f40}
-#products-list a:link{ text-decoration: none}
+#products-list-sub a:hover>h5,
+#products-list-sub a:hover>p{ color: #f40}
+#products-list a:link,
+#products-list-sub a:link{ text-decoration: none}
 
 /*搜尋結果*/
 #box_search-nothing{
@@ -757,13 +768,21 @@ footer .copyright{
     margin-bottom: 50px;
     text-align: center}
 #bar_PageTruner{ display: none}
-#bar_PageNumber a:link{
+#bar_PageNumber a:link,
+#bar_PageNumber span{
     font-size: 1.6em;
     line-height: 2.2em;
-    color: #444545;
+    /*color: #444545;*/
     text-decoration: none;
     padding: 0 30px;
     border-right: 1px solid #bfbfbf}
+#bar_PageNumber a:link{ color: #444545}
+#bar_PageNumber span{ 
+    color: #fff; 
+    background: #3ec7b1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px}
 #bar_PageNext a:link{
     display: inline-block;
     width: 33%;

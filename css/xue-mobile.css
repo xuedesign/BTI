@@ -54,6 +54,14 @@ footer .copyright{ min-width: 1000px}
 #foot-main{ padding: 0}    
 .foot-item{ margin-left: 75px}
 
+#box_top h1 a{
+    top: 30px;
+    left: 10px;
+    width: 500px;
+    height: 81px;
+    background: url(../images/logo-site-02.png) no-repeat;
+    background-size: contain;
+    background: url(../images/logo-site-02-ie.png) no-repeat \9;}     
 #body-indexleft{ width: 600px}
 #body-indexright{ width: 300px}
 #body-content{
@@ -103,12 +111,14 @@ footer .copyright{ min-width: 1000px}
     width: 360px;
     height: auto}
 
-#products-list{
+#products-list,
+#products-list-sub{
     width: 650px;
-    padding: 0 0 30px 50px}
-#products-list li{
-    width: 45%;
-    margin: 0 2% 40px}
+    padding: 0 0 10px 50px}
+#products-list li,
+#products-list-sub li{width: 45%}
+#products-list li{ margin: 0 2% 10px}
+#products-list-sub li{ margin: 0 2% 10px}
 #list-name{ padding-left: 50px}
 #list-info{
     width: 90%;
@@ -116,13 +126,17 @@ footer .copyright{ min-width: 1000px}
     margin-right: auto}
 #list-info li:first-child{
     width: 90%}
-#product-name,
+#product-name{
+    width: 90%; 
+    margin: 0 auto 10px auto}
 #product-info,
 #page-main,
-#how-to-buy{ width: 90%; margin: 0 auto}
+#how-to-buy{ 
+    width: 90%; 
+    margin: 0 auto 40px auto}
 #contact-list li a:link,
 #contact-list li a:visited{
-    width: 95px;
+    /*width: 95px;*/
     margin-right: 10px}
 }
 
@@ -152,6 +166,7 @@ footer .copyright{ min-width: 750px}
 .foot-item{ margin-left: 45px}
     
 #box_top h1 a{
+    top: 40px;
     width: 400px;
     height: 130px;
     background-size: contain} 
@@ -210,21 +225,28 @@ footer .copyright{ min-width: 750px}
 #box_banner-page h2{ width: 35%; font-size: 4em}
 #box_banner-page span{ width: 65%}   
 #box_about-img img{ width: 90%; height: auto}
-#warranty-list a:link,
+/*#warranty-list a:link,
 #warranty-list a:visited{ width: 130px}
-#warranty-list a.lineid{ width: 180px}
+#warranty-list a.lineid{ width: 180px}*/
     
-#products-list{
+#products-list,
+#products-list-sub{
     width: 100%;
-    padding: 0 0 30px}
-#products-list li{
+    padding: 0 0 10px}
+/*#products-list li{
     width: 45%;
-    margin: 0 2% 40px}
+    margin: 0 2% 40px}*/
 #list-info li:first-child{
     width: 100%}
 .btn_backlist{
     display: block;
-    margin-bottom: 50px}    
+    margin-bottom: 50px}
+#bar_PageNumber{ margin-bottom: 0}
+#bar_PageNumber a:link,
+#bar_PageNumber span{
+    font-size: 1.8em;
+    line-height: 2.2em;
+    padding: 0 25px}
 }
 
 /*
@@ -246,13 +268,15 @@ footer .copyright{ min-width: 573px}
 #nav_main li a:link,
 #nav_main li a:visited{ width: 114px}
 #box_banner{ height: 184px}
-footer{ height: 320px}
+/*footer{ height: 320px}*/
 .foot-item{ margin-left: 10px; margin-right: 20px}
 .foot-item:nth-child(2){ width: 40%}
 
-#box_top h1 a{ 
+#box_top h1 a{
+    top: 10px;
     width: 170px;
     height: 130px;
+    background: url(../images/logo-site-03.png) no-repeat;
     background-size: 400px 130px;
     overflow: hidden}
 #box_topright{ right: 10px}
@@ -292,17 +316,32 @@ footer{ height: 320px}
 #box_error h3,
 #box_error p{ line-height: 1.8em}
 
-#products-list span{
+#products-list li{
+    height: 260px;
+    margin-bottom: 20px}
+#products-list-sub li{
+    height: 280px;
+    margin-bottom: 20px}
+#products-list span,
+#products-list-sub span{
     display: block;
     width: 100%;
     height: 179px;
     overflow: hidden}
-#products-list img{
+#products-list img,
+#products-list-sub img{
     display: block;
     height: 170px;
     width: auto;
     /*border: 1px solid #e4e3e4;*/
     margin: 0 auto}
+#product-info li:nth-child(1){
+    display: block;
+    width: 100%}
+#contact-list .btn_back{ 
+    float: left;
+    margin-top: 15px}    
+    
 }
 
 /*
@@ -321,13 +360,15 @@ footer .copyright{ min-width: 360px}
 #nav_main,
 #my-container,
 #foot-main{ width: 360px}
-#box_banner{ height: 121px}
+#box_banner{ height: 116px}
 
 #atindex{ background: none}
 #box_top{ height: 150px}
 #box_top h1 a{ 
+    top: 25px;
     width: 250px;
     height: 81px;
+    background: url(../images/logo-site-02.png) no-repeat;
     background-size: contain;
     overflow: hidden}
 #box_topright{
@@ -376,11 +417,16 @@ footer{ height: auto; padding-bottom: 10px}
 .fb-page{ width: 95%; margin-left: 0}
 .inproduce-item{
     width: 300px;
+    height: 290px;
     margin-right: 17px;
     margin-left: 17px}
 .inproduce-item span{ width: 300px; height: 207px}
 .inproduce-item img{ height: 207px}
-.inproduce-item p{ max-width: 300px}
+.inproduce-item p{
+    width: 100%;
+    max-width: 300px;
+    font-size: 1.7em;
+    line-height: 1.6em;}
 .btn_more{ margin-right: 8px}
 #toTop{ display: none}
  
@@ -417,15 +463,33 @@ footer{ height: auto; padding-bottom: 10px}
     line-height: 1.7em; 
     margin-bottom: 20px}
     
-#products-list li{
+#products-list li,
+#products-list-sub li{
     width: 95%;
-    margin: 0 2% 40px}
+    margin: 0 2% 0}
+#products-list-sub li{ margin-bottom: 10px}
 #list-name{ padding-left: 25px}
 .list-sort a:nth-child(2),
 .list-sort a:nth-child(3),
 .list-sort a:nth-child(4){
     display: block;
     padding-left: 48px}
+#product-info li{
+    display: block;
+    width: 100%}
+#contact-list li a:link,
+#contact-list li a:visited{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px}
+#contact-list .btn_back{ 
+    width: 100%;
+    float: right}
+#bar_PageNumber a:link,
+#bar_PageNumber span{
+    font-size: 1.8em;
+    line-height: 2.2em;
+    padding: 0 18px}
 }
 
 /*
@@ -456,7 +520,7 @@ footer .copyright{ font-size: 1.3em}
     width: 40%;
     padding-left: 18px}
 #box_top h1 a{
-    top: 5px;
+    top: 25px;
     width: 200px;
     height: 65px;
     background-size: contain;
@@ -476,7 +540,7 @@ footer .copyright{ font-size: 1.3em}
 .mybtn-xl,
 .mybtn-l,
 .mybtn-m,
-.mybtn-s{ font-size: 1.3em; line-height: 15px}
+.mybtn-s{ font-size: 1.5em; line-height: 15px}
 .inproduce-item{ width: 245px}
 .inproduce-item span{ width: 245px; height: 169px}
 .inproduce-item img{ height: 169px}
@@ -492,6 +556,11 @@ footer .copyright{ font-size: 1.3em}
     height: 100px;
     margin-bottom: 15px}
 #box_banner-page h2.long-title{ font-size: 2.5em}
+#bar_PageNumber a:link,
+#bar_PageNumber span{
+    font-size: 1.6em;
+    line-height: 2.2em;
+    padding: 0 13px}
 }
 
 
