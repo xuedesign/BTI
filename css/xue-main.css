@@ -319,16 +319,26 @@ footer .copyright{
     float: left; 
     width: 250px}
 .index-news-list{
-    display: table;
+    display: block;
     width: 725px;
     margin: 0 40px 50px 55px}
-.index-news-list td,
-.news-list td{ 
+.index-news-item{
+    display: block;
+    width: 98%;
     padding: 15px 10px;
-    border-bottom: 1px dashed #cbc9c9;
-    overflow: hidden}
-.news-data{ width: 15%; text-align: center}
-.news-data span{
+    border-bottom: 1px dashed #cbc9c9}
+.index-news-item > .news-date{ 
+    display: inline-block;
+    width: 15%; 
+    text-align: center}
+.index-news-item > .news-title{
+    display: inline-block;
+    width: 77%;
+    padding-left: 20px}
+.index-news-item > .news-date,
+.index-news-item > .news-title{ 
+    vertical-align: middle}
+.news-date span{
     font-size: 1.3em;
     font-weight: 500;
     color: #454445;
@@ -554,10 +564,10 @@ footer .copyright{
     border-bottom: 2px solid #dcddde}
 #product-info li{
     display: inline-block;
-    width: 31%;
+    /*width: 31%;*/
     font-size: 1.5em;
-    line-height: 2.3em;
-    padding-left: 2%}
+    line-height: 2em;
+    padding: 1% 0 1% 5%}
 #list-info li{
     display: block;
     width: 92.5%;
@@ -679,7 +689,7 @@ footer .copyright{
     margin: 0 1%;
     text-align: center;
     /*border-bottom: 1px solid #e1e1e1*/}
-#products-list li{ height: 270px}
+#products-list li{ height: 280px}
 #products-list-sub li{ height: 320px}
 #products-list span,
 #products-list-sub span{
@@ -706,7 +716,7 @@ footer .copyright{
 #products-list a>h5,
 #products-list-sub a>h5{
     max-height: 3.6em;
-    font-size: 1.8em;
+    font-size: 1.6em;
     line-height: 1.6em}
 #products-list-sub a>p{
     font-size: 1.5em;
@@ -759,15 +769,26 @@ footer .copyright{
     display: table;
     width: 98%;
     margin: 0 auto 30px auto}
-#bar_PageNumber,
-#bar_PageNext,
-#bar_PageTruner{
+.news-item{
+    display: block;
+    width: 98%;
+    padding: 15px 10px;
+    border-bottom: 1px dashed #cbc9c9}
+.news-item > .news-date{ 
+    display: inline-block;
+    width: 15%; 
+    text-align: center}
+.news-item > .news-title{
+    display: inline-block;
+    width: 80%}
+.news-item > .news-date,
+.news-item > .news-title{ vertical-align: middle}
+#bar_PageNumber{
     display: block;
     width: 100%;
     padding: 20px 0;
     margin-bottom: 50px;
     text-align: center}
-#bar_PageTruner{ display: none}
 #bar_PageNumber a:link,
 #bar_PageNumber span{
     font-size: 1.6em;
@@ -783,26 +804,12 @@ footer .copyright{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px}
-#bar_PageNext a:link{
-    display: inline-block;
-    width: 33%;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 1.6em;
-    line-height: 2.2em;
-    color: #444545;
-    text-decoration: none;
-    padding: 0 30px;
-    border-right: 1px solid #bfbfbf}
-#bar_PageNumber a:last-child,
-#bar_PageNext a:last-child{
+#bar_PageNumber a:last-child{
     border-right: none}
-#bar_PageNumber a:visited,
-#bar_PageNext a:visited{
+#bar_PageNumber a:visited{
     color: #8e8e8e;
     text-decoration: none}
-#bar_PageNumber a:hover,
-#bar_PageNext a:hover{
+#bar_PageNumber a:hover{
     color: #fff;
     background: #3ec7b1;
     text-decoration: none;
@@ -895,7 +902,8 @@ footer .copyright{
     font-weight: 500;
     font-weight: bold \9;
     letter-spacing: 1px;
-    padding-left: 15px}
+    padding-left: 15px;
+    vertical-align: middle}
 #my_form input,
 #my_form textarea{
     display: block;
@@ -916,6 +924,10 @@ footer .copyright{
     -webkit-box-shadow: 0 0 10px #3ec7b1;
     -moz-box-shadow:0 0 10px #3ec7b1;
     box-shadow: 0 0 10px #3ec7b1}
+#my_form img{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 15px 8px}
 .btn_send{
     font-weight: 500;
     font-size: 1.6em;
