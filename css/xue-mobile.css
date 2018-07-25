@@ -185,6 +185,9 @@ footer .copyright{ min-width: 750px}
     width: 345px;
     text-align: right}    
 #box_topright h4{ font-size: 1.6em}
+#box_topright p{ display: none}
+#box_search,
+#ppsearch{ width: 85%}
 .box-left,
 .box-right { float: none}
 .mybtn-s{
@@ -231,9 +234,16 @@ footer .copyright{ min-width: 750px}
     width: 96% !important}
 .fb-page{ 
     margin-left: 45px; 
-    margin-bottom: 50px}    
-#box_banner-page h2{ width: 35%; font-size: 4em}
-#box_banner-page span{ width: 65%}   
+    margin-bottom: 50px}
+#box_banner-page{ height: 130px}
+#box_banner-page h2{ 
+    width: 35%; 
+    font-size: 4em;
+    padding-top: 35px}
+#box_banner-page.banner-color-06>h2{
+    padding-top: 20px}
+#box_banner-page span{ width: 65%}
+#box_banner-page img{ width: 100%; height: auto}     
 #box_about-img img{ width: 90%; height: auto}
 /*#warranty-list a:link,
 #warranty-list a:visited{ width: 130px}
@@ -332,10 +342,14 @@ footer .copyright{ min-width: 573px}
     width: 90%; 
     text-align: left}
 #bar-cookie{ display: none}
+#box_banner-page{ height: 100px}
 #box_banner-page h2{ 
     width: 35%; 
-    font-size: 3.5em;
-    padding: 50px 30px 0 20px}
+    font-size: 3em;
+    padding: 30px 30px 0 20px}
+#box_banner-page.banner-color-06>h2{ 
+    font-size: 2.5em;
+    padding: 20px 30px 0 20px}    
 #box_banner-page span{ width: 65%} 
 #box_about-txt{ padding-right: 15px}
 #warranty-list a:link,
@@ -427,6 +441,9 @@ footer .copyright{ min-width: 360px}
     top: 91px;
     right: 20px}
 #box_topright h4{ display: none}
+#box_search,
+#ppsearch{ width: 90%}    
+    
 #nav_main{ display: none}
 footer{ height: auto; padding-bottom: 10px}
 .foot-item{
@@ -488,18 +505,28 @@ footer{ height: auto; padding-bottom: 10px}
 #toTop{ display: none}
  
 #box_banner-page{ 
-    position: relative}
+    position: relative;
+    height: 165px}
 #box_banner-page h2{
     position: absolute;
-    top: 208px;
+    top: 115px/*208px*/;
     left: 20px;
     z-index: 99;
     width: 90%;
-    font-size: 3.5em;
+    font-size: 2.8em;
+    line-height: 1em;
     padding: 0}
+#box_banner-page.banner-color-06>h2{
+    width: 95%;
+    top: 100px;
+    left: 10px;
+    font-size: 2.5em}
 #box_banner-page span{ 
     width: 100%;
-    height: 200px}
+    height: 165px}
+#box_banner-page img{
+    width: 100%;
+    height: auto}
 #container-top h2{ width: 98%}
 #body-full{ margin: -10px auto 0 auto}
 #box_about-img,
@@ -604,8 +631,9 @@ footer .copyright{ font-size: 1.3em}
 #box_topright{
     top: 85px;
     right: 0}
-#box_topright p{ display: none}
-#ppsearch{ width: 240px}
+#box_search{ width: 95%} 
+#ppsearch{ width: 85%} 
+    
 #my-container h2{
     font-size: 2em;
     padding: 0 0 15px 53px}
