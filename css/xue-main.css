@@ -508,12 +508,28 @@ footer .copyright{
     color: #601986}
 /*#fitem-01{ margin-right: 80px}
 #fitem-02{ margin-right: 80px}*/
-#fitem-03 li{ display: inline-block; margin-right: 8px}
-#fitem-03 a{ 
+#fitem-03 li{ 
+    display: inline-block; 
+    width: 35px;
+    height: 35px;
+    margin-right: 8px}
+.icon_facbook a,
+.icon_line a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url(../images/icon_socel.png) no-repeat}
+.icon_line a{ background-position: -35px 0}
+.icon_facbook a:hover,
+.icon_line a:hover{
+    background: url(../images/icon_socel.png) no-repeat}
+.icon_facbook a:hover{ background-position: 0 -35px}
+.icon_line a:hover{ background-position: -35px -35px}
+/*#fitem-03 a{ 
     vertical-align: top; 
     font-size: 2.5em;
     opacity: .6}
-#fitem-03 a:hover{ opacity: 1; transition: .5s}
+#fitem-03 a:hover{ opacity: 1; transition: .5s}*/
 
 /*商品介紹*/
 .banner-color-00{ background:#c4c4c4}
