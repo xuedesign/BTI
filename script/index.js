@@ -1,12 +1,12 @@
 $LAB
 
 //jQuery總碼
-.script("https://code.jquery.com/jquery.min.js")
+//.script("https://code.jquery.com/jquery.min.js")
 
 //Banner輪播
-.script("script/lib/jquery.flexslider-min.js").wait(function(){
-    $(window).load(function(){$(".flexslider").flexslider({animation:"slide"})});
-  })
+//.script("script/lib/jquery.flexslider-min.js").wait(function(){
+//    $(window).load(function(){$(".flexslider").flexslider({animation:"slide"})});
+//  })
 
 //圖片延遲載入
 .script("https://cdn.jsdelivr.net/npm/lazyload@1.8.4/jquery.lazyload.min.js").wait(function(){
@@ -29,15 +29,6 @@ $LAB
 .script("script/lib/overlay-classie.js")
 .script("script/lib/overlay-set.js")
 
-//FB粉絲頁訊息
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.0';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
 // 另開視窗
 function externalLinks() { 
  if (!document.getElementsByTagName) return; 
@@ -50,3 +41,12 @@ function externalLinks() {
  } 
 } 
 window.onload = externalLinks;
+
+//FB粉絲頁訊息
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'))
