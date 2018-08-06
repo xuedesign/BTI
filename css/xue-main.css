@@ -351,9 +351,16 @@ footer .copyright{
     -moz-border-radius: 5px; 
     -o-border-radius: 5px; 
     border-radius: 5px}
-.news-title a:link{
+.news-title{
     font-size: 1.6em;
+    /*font-size: 16px \9;*/
     line-height: 1.4em;
+    /*line-height: 22px \9; */   }
+.news-title a:link{
+    /*font-size: 1.6em;
+    font-size: 16px \9;
+    line-height: 1.4em;
+    line-height: 22px \9;*/
     color: #454445;
     text-decoration: none}
 .news-title a:visited{
@@ -744,7 +751,9 @@ footer .copyright{
 #products-list-sub a:hover>h5,
 #products-list-sub a:hover>p{ color: #f40}
 #products-list a:link,
-#products-list-sub a:link{ text-decoration: none}
+#products-list-sub a:link,
+#products-list a:hover,
+#products-list a:hover{ text-decoration: none}
 
 /*搜尋結果*/
 #box_search-nothing{
