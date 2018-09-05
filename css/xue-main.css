@@ -619,6 +619,9 @@ footer .copyright{
     display: block;
     width: 96%;
     padding: 0 2% 30px}
+#page-main h2{
+    background: none;
+    padding: 0 0 15px 0}
 #page-main p{
     font-size: 1.6em;
     line-height: 2em}
