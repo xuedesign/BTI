@@ -28,7 +28,7 @@
 * @project    Bioevolve Technology Inc.
 * @Author     Elmo Woo <hello@xuedesign.tw>
 * @copyright  2018 xuedesign studio
-* @version    v1.0 - 201806-201807
+* @version    v1.1 - 201806-201809
 *
 *=====================================
 * 0. Reset重置
@@ -442,15 +442,22 @@ footer .copyright{
 .pplist-index ul,
 #sub-menu ul{
     display: block;
-    padding: 20px 25px 30px}
+    padding: 20px 25px 30px 55px}
+.pplist-index li,
+#sub-menu li{
+    /*display: block;*/
+    list-style-image: url(../images/icon_codepen.png);
+    padding-bottom: 15px;
+    vertical-align: text-bottom}
 .pplist-index li a:link,
 .pplist-index li a:visited,
 #sub-menu li a:link,
 #sub-menu li a:visited{
     font-size: 1.6em;
-    line-height: 2.5em;
+    line-height: 1.8em;
     color: #454445;
-    text-decoration: none}
+    text-decoration: none;
+    text-indent: 8px}
 .pplist-index li a:hover,
 #sub-menu li a:hover{
     color: #f40;
