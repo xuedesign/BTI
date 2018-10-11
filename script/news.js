@@ -27,6 +27,9 @@ $LAB
 .script("script/lib/overlay-classie.js")
 .script("script/lib/overlay-set.js")
 
+//鎖右鍵
+.script("script/lib/no-rightbtn.js")
+
 // 另開視窗
 function externalLinks() { 
  if (!document.getElementsByTagName) return; 
