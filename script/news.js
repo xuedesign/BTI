@@ -28,7 +28,7 @@ $LAB
 .script("script/lib/overlay-set.js")
 
 //鎖右鍵
-.script("script/lib/no-rightbtn.js")
+.script("http://www.bti.com.tw/js/lib/no-rightbtn.js")
 
 // 另開視窗
 function externalLinks() { 
