@@ -1268,8 +1268,8 @@ footer .copyright{
     -moz-animation-duration: 900ms;
     animation-duration: 900ms}
 .fadeInRight-01{
-    -webkit-animation-delay: 500ms;
-    animation-delay: 500ms}
+    /*-webkit-animation-delay: 500ms;
+    animation-delay: 500ms*/}
 
 
 @keyframes fadeInLeft {
@@ -1286,8 +1286,8 @@ footer .copyright{
 .fadeInLeft{
     -webkit-animation-name: fadeInLeft;
     animation-name: fadeInLeft;
-    -webkit-animation-delay: 900ms;
-    animation-delay: 900ms;
+    /*-webkit-animation-delay: 900ms;
+    animation-delay: 900ms;*/
     -webkit-animation-duration: 1200ms;
     -moz-animation-duration: 1200ms;
     animation-duration: 1200ms}
