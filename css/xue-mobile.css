@@ -198,8 +198,9 @@ footer .copyright{ min-width: 750px}
     width: 98%;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 50px;
     padding-right: 20px}
+#body-indexleft{ margin-bottom: 20px}
+#body-indexright{ margin-bottom: 50px}    
 #body-content{
     width: 700px;
     margin-left: 25px;
@@ -234,7 +235,7 @@ footer .copyright{ min-width: 750px}
     width: 96% !important}
 .fb-page{ 
     margin-left: 45px; 
-    margin-bottom: 50px}
+    margin-bottom: 30px}
 #box_banner-page{ height: 130px}
 #box_banner-page h2{ 
     width: 35%; 
@@ -496,7 +497,10 @@ footer{ height: auto; padding-bottom: 10px}
 .index-news-list,
 .index-newest-products,
 .pplist-index,
-.fb-page{ width: 95%; margin-left: 0}
+.fb-page{ 
+    width: 95%; 
+    margin-left: 0;
+    margin-bottom: 30px}   
 .index-news-item > .news-date{
     margin: 15px 0}
 .index-news-item > .news-date,

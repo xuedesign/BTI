@@ -491,12 +491,16 @@ footer .copyright{
 .bg-02{
     background: #f3f3f3 url(../images/bg_ppitem-02.png) no-repeat;
     background-position: 210px 120px}
-.fb-page{ margin-left: 60px ; display: none \9}
+.fb-page{ 
+    margin-left: 60px ;
+    margin-bottom: 30px; 
+    display: none \9}
 .box_fbinfo{
     display: none;
     display: block \9;
     width: 340px;
-    margin-left: 60px}
+    margin-left: 60px;
+    margin-bottom: 30px}
 .box_fbinfo p{
     margin-top: 8px;
     font-size: 1.6em;
