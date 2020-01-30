@@ -47,6 +47,6 @@
 .adpopup a.adpopup-close{width:20px !important;height:20px !important;display:block !important;position:absolute !important;z-index:999992 !important;top:-10px !important;right:-10px !important;cursor:pointer !important;text-decoration:none !important;margin:0 !important;padding:0 !important;border:none !important;}.adpopup.adpopup-style-close-dark a.adpopup-close{background:url(../../images/close_black_normal.png) no-repeat;}
 .adpopup.adpopup-style-close-dark a.adpopup-close:hover{background:url(../../images/close_black_hover.png) no-repeat;}
 .adpopup.adpopup-style-close-dark a.adpopup-close:active{background:url(../../images/close_black_active.png) no-repeat;}
-.adpopup.adpopup-style-close-light a.adpopup-close{background:url(../images/close_light_normal.png) no-repeat;}
+/* .adpopup.adpopup-style-close-light a.adpopup-close{background:url(../images/close_light_normal.png) no-repeat;}
 .adpopup.adpopup-style-close-light a.adpopup-close:hover{background:url(../images/close_light_hover.png) no-repeat;}
-.adpopup.adpopup-style-close-light a.adpopup-close:active{background:url(../images/close_light_active.png) no-repeat;}
+.adpopup.adpopup-style-close-light a.adpopup-close:active{background:url(../images/close_light_active.png) no-repeat;} */

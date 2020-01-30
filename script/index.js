@@ -8,6 +8,10 @@ $LAB
 //    $(window).load(function(){$(".flexslider").flexslider({animation:"slide"})});
 //  })
 
+//彈跳廣告視窗
+.script("script/lib/adpopup-pro.min.js")
+.script("script/lib/adpopup-setting.js")
+
 //圖片延遲載入
 .script("https://cdn.jsdelivr.net/npm/lazyload@1.8.4/jquery.lazyload.min.js").wait(function(){
     $("img.lazyload").lazyload();
