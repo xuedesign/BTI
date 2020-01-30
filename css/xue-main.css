@@ -1409,6 +1409,6 @@ footer .copyright{
 .adpopup.adpopup-style-bg-dark{background:#292929;border-color:#000;color:#eee;}
 .adpopup.adpopup-style-bg-dark a{color:#eee;}
 .adpopup.adpopup-style-bg-dark a:hover{color:#fff;}
-.adpopup a.adpopup-close{width:20px !important;height:20px !important;display:block !important;position:absolute !important;z-index:999992 !important;top:-10px !important;right:-10px !important;cursor:pointer !important;text-decoration:none !important;margin:0 !important;padding:0 !important;border:none !important;}.adpopup.adpopup-style-close-dark a.adpopup-close{background:url(../../images/close_black_normal.png) no-repeat;}
-.adpopup.adpopup-style-close-dark a.adpopup-close:hover{background:url(../../images/close_black_hover.png) no-repeat;}
-.adpopup.adpopup-style-close-dark a.adpopup-close:active{background:url(../../images/close_black_active.png) no-repeat;}
+.adpopup a.adpopup-close{width:20px !important;height:20px !important;display:block !important;position:absolute !important;z-index:999992 !important;top:-10px !important;right:-10px !important;cursor:pointer !important;text-decoration:none !important;margin:0 !important;padding:0 !important;border:none !important;}.adpopup.adpopup-style-close-dark a.adpopup-close{background:url(http://www.bti.com.tw/Content/images/close_black_normal.png) no-repeat;}
+.adpopup.adpopup-style-close-dark a.adpopup-close:hover{background:url(http://www.bti.com.tw/Content/images/close_black_hover.png) no-repeat;}
+.adpopup.adpopup-style-close-dark a.adpopup-close:active{background:url(http://www.bti.com.tw/Content/images/close_black_active.png) no-repeat;}
