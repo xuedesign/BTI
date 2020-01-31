@@ -40,10 +40,11 @@ $(document).ready(function() {
   }
 
 	  $('body').adPopupPro({
-	    ads: ads,
+      ads: ads,
+      show_type: 'session',
 	    width: 600,
       height: 450,
       mobile: false,
-      min_screen_size: '700x700',
+      min_screen_size: '600x450',
 	  });
   });
