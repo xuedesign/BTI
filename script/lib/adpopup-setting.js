@@ -44,7 +44,6 @@ $(document).ready(function() {
       show_type: 'session',
 	    width: 600,
       height: 450,
-      mobile: false,
-      min_screen_size: '600x450',
+      min_screen_size: '650x500',
 	  });
   });

@@ -9,8 +9,8 @@ $LAB
 //  })
 
 //彈跳廣告視窗
-.script("script/lib/adpopup-pro.min.js")
-.script("script/lib/adpopup-setting.js")
+.script("http://www.bti.com.tw/js/lib/adpopup-pro.min.js")
+.script("http://www.bti.com.tw/js/lib/adpopup-setting.js")
 
 //圖片延遲載入
 .script("https://cdn.jsdelivr.net/npm/lazyload@1.8.4/jquery.lazyload.min.js").wait(function(){
