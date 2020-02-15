@@ -49,7 +49,7 @@ footer .copyright{ min-width: 1000px}
 #my-container,
 #foot-main{ width: 1000px}
 #nav_main li a:link,
-#nav_main li a:visited{ width: 200px}
+#nav_main li a:visited{ width: calc(100% / 6);/*200px*/}
 #box_banner{ height: 323px}
 #foot-main{ padding: 35px 0 0}    
 .foot-item{ margin-left: 75px}
@@ -175,7 +175,7 @@ footer .copyright{ min-width: 750px}
 #my-container,
 #foot-main{ width: 750px}
 #nav_main li a:link,
-#nav_main li a:visited{ width: 150px}
+#nav_main li a:visited{ width: calc(100% / 6);/*150px*/}
 #box_banner{ height: 242px}
 #foot-main h3{ display: none}
 .foot-item{ margin-left: 45px}
@@ -328,7 +328,7 @@ footer .copyright{ min-width: 573px}
 #my-container,
 #foot-main{ width: 573px}
 #nav_main li a:link,
-#nav_main li a:visited{ width: 114px}
+#nav_main li a:visited{ width: calc(100% / 6);/*114px*/}
 #box_banner{ height: 184px}
 #foot-main{ padding: 25px 0 0}
 /*footer{ height: 320px}*/

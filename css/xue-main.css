@@ -1096,7 +1096,7 @@ footer .copyright{
 #nav_main li a:visited{
     display: block;
     float: left;
-    width: 256px;
+    width: calc(100% / 6);;/*256px; */
     font-size: 2em;
     font-weight: 400;
     line-height: 3em;
