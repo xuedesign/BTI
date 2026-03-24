@@ -1,7 +1,7 @@
 $LAB
 
 //jQuery總碼
-.script("https://code.jquery.com/jquery.min.js")
+.script("https://code.jquery.com/jquery-3.7.1.min.js")
 
 //彈跳廣告視窗
 .script("script/lib/adpopup-pro.min.js")

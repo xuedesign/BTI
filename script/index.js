@@ -1,7 +1,7 @@
 $LAB
 
 //jQuery總碼
-//.script("https://code.jquery.com/jquery.min.js")
+//.script("https://code.jquery.com/jquery-3.7.1.min.js")
 
 //Banner輪播
 //.script("script/lib/jquery.flexslider-min.js").wait(function(){
